@@ -53,7 +53,7 @@
 		<section class="promo-slider">
 			<h2 class="visually-hidden">Промо-слайдер</h2>
       <ul class="promo-slider__list">
-      	<li class="promo-slider__item">
+      	<li class="promo-slider__item  promo-slider__item--01">
       		<img src="#" alt="Самая длинная палка для селфи">
       		<b>Делай селфи,<br>как Бен Стиллер!</b>
       		<p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -76,7 +76,7 @@
       			</tr>
       		</table>
       	</li>
-      	<li class="promo-slider__item">
+      	<li class="promo-slider__item  promo-slider__item--02">
       		<img src="#" alt="Фитнес-браслет">
       		<b>Худеем<br>правильно!</b>
       		<p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
@@ -95,7 +95,7 @@
       			</tr>
       		</table>
       	</li>
-      	<li class="promo-slider__item">
+      	<li class="promo-slider__item  promo-slider__item--03">
       		<img src="#" alt="Квадрокоптер">
       		<b>Порхает как бабочка,<br>жалит как пчела!</b>
       		<p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
@@ -123,6 +123,7 @@
 		</section>
 
 		<section class="main-goods">
+			<h2 class="visually-hidden">Популярные товары</h2>
 			<ul class="main-goods__list">
 				<li class="main-goods__item">
 					<img src="#" alt="Очки VR">
@@ -151,7 +152,47 @@
 			</ul>
 		</section>
 
-		
+		<section class="services-slider">
+			<h2 class="visually-hidden">Наши сервисы</h2>
+			<ul class="services-slider__list">
+      	<li class="services-slider__item">
+      		<div class="services-slider__controls">
+        		<label for="services-control-1">Доставка</label>
+        		<label for="services-control-2">Гарантия</label>
+        		<label for="services-control-3">Кредит</label>
+      		</div>
+      		<dl class="services-slider__descr">
+  					<dt>Доставка</dt>
+  					 <dd>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</dd>
+					</dl>
+      	</li>
+      	<li class="services-slider__item  services-slider__item--delivery">
+      		<div class="services-slider__controls">
+        		<label for="services-control-1">Доставка</label>
+        		<label for="services-control-2">Гарантия</label>
+        		<label for="services-control-3">Кредит</label>
+      		</div>
+      		<dl class="services-slider__descr">
+  					<dt>Гарантия</dt>
+  					 <dd>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</dd>
+					</dl>
+      	</li>
+      	<li class="services-slider__item">
+      		<div class="services-slider__controls  services-slider__item--warranty">
+        		<label for="services-control-1">Доставка</label>
+        		<label for="services-control-2">Гарантия</label>
+        		<label for="services-control-3">Кредит</label>
+      		</div>
+      		<dl class="services-slider__descr  services-slider__item--credit">
+  					<dt>Кредит</dt>
+  					 <dd>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</dd>
+					</dl>
+      	</li>
+      </ul>
+			<input type="radio" id="services-control-1" name="services-control" checked>
+      <input type="radio" id="services-control-2" name="services-control">
+      <input type="radio" id="services-control-3" name="services-control">
+		</section>
 	</main>
   </body>
 </html>
