@@ -84,7 +84,39 @@
 			</nav>
 		</header>
 		<aside class="sidebar">
-			
+			<header class="sidebar__header">
+				<h2>Фильтр:</h2>
+			</header>
+			<form class="filter" action="">
+				<ul class="filter__list">
+					<li class="filter__item">
+						<h3>Стоимость</h3>
+						<label for="filter-range"></label>
+						<input type="range" name="price-range" id="filter-range" min="0" max="10000" step="100" value="5000" >
+					</li>
+					<li class="filter__item">
+						<h3>Цвет</h3>
+						<label for="filter-check-1">Черный</label>
+						<label for="filter-check-2">Белый</label>
+						<label for="filter-check-3">Синий</label>
+						<label for="filter-check-4">Красный</label>
+						<label for="filter-check-5">Розовый</label>
+						<input type="checkbox" name="black" id="filter-check-1">
+						<input type="checkbox" name="white" id="filter-check-2">
+						<input type="checkbox" name="blue" id="filter-check-3">
+						<input type="checkbox" name="red" id="filter-check-4">
+						<input type="checkbox" name="pink" id="filter-check-5">
+					</li>
+					<li class="filter__item">
+						<h3>Bluetooth</h3>
+						<label class="filter__control  filter__control--active" for="filter-control-1">Есть</label>
+						<label class="filter__control" for="filter-control-2">Нет</label>
+						<input type="radio" name="filter-control" id="filter-control-1">
+						<input type="radio" name="filter-control" id="filter-control-2">
+					</li>
+				</ul>
+				<button class="btn" type="submit">Показать</button>
+			</form>
 		</aside>
 
 	</main>
