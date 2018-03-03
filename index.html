@@ -13,7 +13,7 @@
 		<nav class="main-nav">
 			<ul class="main-nav__user-list">
 				<li class="main-nav__user-item">
-					<form class="main-nav__search" action="">
+					<form class="main-nav__search" method="get">
 						<button type="submit">Поиск</button>
 						<input type="text" name="search" placeholder="Поиск по сайту">
 					</form>
@@ -73,9 +73,9 @@
       		<p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
       		<a class="btn" href="#">Подробнее</a>
       		<div class="promo-slider__controls">
-        		<label for="promo-control-1  promo-control-1--active"></label>
-        		<label for="promo-control-2"></label>
-        		<label for="promo-control-3"></label>
+        		<label class="promo-slider__control  promo-slider__control--active" for="promo-control-1"></label>
+        		<label class="promo-slider__control" for="promo-control-2"></label>
+        		<label class="promo-slider__control" for="promo-control-3"></label>
       		</div>
       		<table class="promo-slider__advantages">
       			<tr>
@@ -96,9 +96,9 @@
       		<p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
       		<a class="btn" href="#">Подробнее</a>
       		<div class="promo-slider__controls">
-        		<label for="promo-control-1"></label>
-        		<label for="promo-control-2  promo-control-2--active"></label>
-        		<label for="promo-control-3"></label>
+        		<label class="promo-slider__control" for="promo-control-1"></label>
+        		<label class="promo-slider__control  promo-slider__control--active" for="promo-control-2"></label>
+        		<label class="promo-slider__control" for="promo-control-3"></label>
       		</div>
       		<table class="promo-slider__advantages">
       			<tr>
@@ -115,9 +115,9 @@
       		<p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
       		<a class="btn" href="#">Подробнее</a>
       		<div class="promo-slider__controls">
-        		<label for="promo-control-1"></label>
-        		<label for="promo-control-2"></label>
-        		<label for="promo-control-3  promo-control-3--active"></label>
+        		<label class="promo-slider__control" for="promo-control-1"></label>
+        		<label class="promo-slider__control  promo-slider__control--active" for="promo-control-2"></label>
+        		<label class="promo-slider__control" for="promo-control-3"></label>
       		</div>
       		<table class="promo-slider__advantages">
       			<tr>
@@ -131,7 +131,7 @@
       		</table>
       	</li>
       </ul>
-			<input type="radio" id="promo-control-1" name="promo-control" checked>
+	  <input type="radio" id="promo-control-1" name="promo-control" checked>
       <input type="radio" id="promo-control-2" name="promo-control">
       <input type="radio" id="promo-control-3" name="promo-control">
 		</section>
@@ -163,9 +163,9 @@
 			<ul class="services-slider__list">
       	<li class="services-slider__item">
       		<div class="services-slider__controls">
-        		<label for="services-control-1  services-control-1--active">Доставка</label>
-        		<label for="services-control-2  services-control-2--active">Гарантия</label>
-        		<label for="services-control-3  services-control-3--active">Кредит</label>
+        		<label class="services-slider__control  services-slider__control--active" for="services-control-1">Доставка</label>
+        		<label class="services-slider__control" for="services-control-2">Гарантия</label>
+        		<label class="services-slider__control" for="services-control-3">Кредит</label>
       		</div>
       		<dl class="services-slider__descr">
   					<dt>Доставка</dt>
@@ -174,9 +174,9 @@
       	</li>
       	<li class="services-slider__item  services-slider__item--delivery">
       		<div class="services-slider__controls">
-        		<label for="services-control-1">Доставка</label>
-        		<label for="services-control-2">Гарантия</label>
-        		<label for="services-control-3">Кредит</label>
+        		<label class="services-slider__control" for="services-control-1">Доставка</label>
+        		<label class="services-slider__control  services-slider__control--active" for="services-control-2">Гарантия</label>
+        		<label class="services-slider__control" for="services-control-3">Кредит</label>
       		</div>
       		<dl class="services-slider__descr">
   					<dt>Гарантия</dt>
@@ -185,9 +185,9 @@
       	</li>
       	<li class="services-slider__item">
       		<div class="services-slider__controls  services-slider__item--warranty">
-        		<label for="services-control-1">Доставка</label>
-        		<label for="services-control-2">Гарантия</label>
-        		<label for="services-control-3">Кредит</label>
+        		<label class="services-slider__control" for="services-control-1">Доставка</label>
+        		<label class="services-slider__control  services-slider__control--active" for="services-control-2">Гарантия</label>
+        		<label class="services-slider__control" for="services-control-3">Кредит</label>
       		</div>
       		<dl class="services-slider__descr  services-slider__item--credit">
   					<dt>Кредит</dt>
