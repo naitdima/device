@@ -34,7 +34,7 @@
 			</ul>
 			<ul class="main-nav__list">
 				<li class="main-nav__item">
-					<a class="main-nav__btn" href="#catalog">Каталог товаров</a>
+					<a class="main-nav__btn" href="#">Каталог товаров</a>
             <table class="main-nav__sub-list">
             	<tr>
             		<td class="main-nav__sub-item"><a href="#">Виртуальная реальность</a></td>
@@ -42,7 +42,7 @@
             		<td class="main-nav__sub-item"><a href="#">Квадрокоптеры</a></td>
             	</tr>
             	<tr>
-            		<td class="main-nav__sub-item"><a href="#">Моноподы для селфи</a></td>
+            		<td class="main-nav__sub-item"><a href="catalog.html">Моноподы для селфи</a></td>
             		<td class="main-nav__sub-item"><a href="#">Умные часы</a></td>
             	</tr>
             	<tr>
@@ -148,12 +148,12 @@
 					<td><img src="#" alt="Квадрокоптер" width="132" height="69"></td>
 				</tr>
 				<tr>
-					<th>Виртуальная реальность</th>
-					<th>Моноподы для селфи</th>
-					<th>Экшн-камеры</th>
-					<th>Фитнес-браслеты</th>
-					<th>Умные часы</th>
-					<th>Квадрокоптеры</th>
+					<th><a href="#">Виртуальная реальность</a></th>
+					<th><a href="catalog.html">Моноподы для селфи</a></th>
+					<th><a href="#">Экшн-камеры</a></th>
+					<th><a href="#">Фитнес-браслеты</a></th>
+					<th><a href="#">Умные часы</a></th>
+					<th><a href="#">Квадрокоптеры</a></th>
 				</tr>
 			</table>
 		</section>
@@ -237,9 +237,30 @@
 			<p>
 				Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 			</p>
-			<img src="#" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
+			<a class="main-contacts__map" href="#"><img src="#" alt="г. Москва, ул. Строителей, 15" width="560" height="222"></a>
 			<a class="btn" href="#">Напишите нам</a>
 		</section>
+		
+		<section class="popup-write-us  popup-write-us--active">
+			<h2 class="visually-hidden">Форма для обратно связи</h2>
+			<form method="post">
+				<label for="user-name">Ваше имя:</label>
+				<input type="text" id="user-name" placeholder="Имя Фамилия">
+
+				<label for="user-mail">Ваш e-mail:</label>
+				<input type="text" id="user-mail" placeholder="email@example.com">
+				
+				<label for="user-letter">Текст письма:</label>
+				<textarea name="text-letter" id="user-letter" cols="100" rows="10" placeholder="В свободной форме"></textarea>
+				<button class="btn" type="submit">Отправить</button>
+				<span>Закрыть</span>
+			</form>
+		</section>
+
+		<section class="popup-map  popup-map--active">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A629b2e37f3c0e18dc5fe434ead5cd83ffa327cabe3900fddd0eaddcb70201760&amp;source=constructor" width="960" height="559" frameborder="0"></iframe>
+		</section>
+
 	</main>
 
 	<footer class="page-footer">
