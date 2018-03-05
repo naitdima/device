@@ -15,22 +15,22 @@
           <li class="main-nav__user-item">
             <form class="main-nav__search" method="get">
               <button type="submit">Поиск</button>
-              <input type="text" name="search" placeholder="Поиск по сайту">
+              <input type="search" name="search" placeholder="Поиск по сайту">
             </form>
           </li>
           <li class="main-nav__user-item">
             <a class="main-nav__user-link" href="#">Войти</a>
           </li>
           <li class="main-nav__user-item">
-            <a class="main-nav__user-btn" href="#">Сравнить</a>
+            <a class="main-nav__user-link" href="#">Сравнить</a>
           </li>
           <li class="main-nav__user-item">
-            <a class="main-nav__user-btn" href="#">Корзина</a>
+            <a class="main-nav__user-link" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__btn" href="#">Каталог товаров</a>
+            <a class="main-nav__link" href="#">Каталог товаров</a>
             <ul class="main-nav__sub-list">
               <li class="main-nav__sub-item"><a href="#">Виртуальная реальность</a></li>
               <li class="main-nav__sub-item"><a href="#">Фитнес-браслеты</a></li>
@@ -41,13 +41,13 @@
             </ul>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__btn" href="#">Доставка</a>
+            <a class="main-nav__link" href="#">Доставка</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__btn" href="#">Гарантия</a>
+            <a class="main-nav__link" href="#">Гарантия</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__btn" href="#">Контакты</a>
+            <a class="main-nav__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -56,17 +56,27 @@
     <main class="page-content">
       <section class="promo-slider">
         <h2 class="visually-hidden">Промо-слайдер</h2>
+        <ul class="promo-slider__controls-list">
+          <li class="promo-slider__controls-item">
+            <label class="promo-slider__control  promo-slider__control--active" for="promo-control-1"></label>
+            <input type="radio" id="promo-control-1" name="promo-control" checked>
+          </li>
+          <li class="promo-slider__controls-item">
+            <label class="promo-slider__control" for="promo-control-2"></label>
+            <input type="radio" id="promo-control-2" name="promo-control">
+          </li>
+          <li class="promo-slider__controls-item">
+            <label class="promo-slider__control" for="promo-control-3"></label>
+            <input type="radio" id="promo-control-3" name="promo-control">
+          </li>
+        </ul>
+
         <ul class="promo-slider__list">
           <li class="promo-slider__item">
             <img src="#" alt="Самая длинная палка для селфи" width="384" height="486">
             <b>Делай селфи,<br>как Бен Стиллер!</b>
             <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="btn" href="#">Подробнее</a>
-            <div class="promo-slider__controls">
-              <label class="promo-slider__control  promo-slider__control--active" for="promo-control-1"></label>
-              <label class="promo-slider__control" for="promo-control-2"></label>
-              <label class="promo-slider__control" for="promo-control-3"></label>
-            </div>
             <table class="promo-slider__advantages">
               <tr>
                 <td>8,5 м</td>
@@ -85,11 +95,6 @@
             <b>Худеем<br>правильно!</b>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
             <a class="btn" href="#">Подробнее</a>
-            <div class="promo-slider__controls">
-              <label class="promo-slider__control" for="promo-control-1"></label>
-              <label class="promo-slider__control  promo-slider__control--active" for="promo-control-2"></label>
-              <label class="promo-slider__control" for="promo-control-3"></label>
-            </div>
             <table class="promo-slider__advantages">
               <tr>
                 <td>48 часов</td>
@@ -104,11 +109,6 @@
             <b>Порхает как бабочка,<br>жалит как пчела!</b>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="btn" href="#">Подробнее</a>
-            <div class="promo-slider__controls">
-              <label class="promo-slider__control" for="promo-control-1"></label>
-              <label class="promo-slider__control  promo-slider__control--active" for="promo-control-2"></label>
-              <label class="promo-slider__control" for="promo-control-3"></label>
-            </div>
             <table class="promo-slider__advantages">
               <tr>
                 <td>800 м</td>
@@ -121,9 +121,6 @@
             </table>
           </li>
         </ul>
-      <input type="radio" id="promo-control-1" name="promo-control" checked>
-        <input type="radio" id="promo-control-2" name="promo-control">
-        <input type="radio" id="promo-control-3" name="promo-control">
       </section>
 
       <section class="main-goods">
@@ -176,23 +173,17 @@
           <label class="services-slider__control" for="services-control-3">Кредит</label>
         </div>
         <ul class="services-slider__list">
-          <li class="services-slider__item">
-            <dl class="services-slider__descr">
-              <dt>Доставка</dt>
-               <dd>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</dd>
-            </dl>
+          <li class="services-slider__item  services-slider__item--active  services-slider__item--delivery">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li class="services-slider__item  services-slider__item--delivery">
-            <dl class="services-slider__descr">
-              <dt>Гарантия</dt>
-               <dd>Если из-за возгорания купленного у нас товара у вас сгорит дом &mdash; не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</dd>
-            </dl>
+          <li class="services-slider__item  services-slider__item--guarantee">
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом &mdash; не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
           </li>
-          <li class="services-slider__item">
-            <dl class="services-slider__descr  services-slider__item--credit">
-              <dt>Кредит</dt>
-               <dd>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</dd>
-            </dl>
+          <li class="services-slider__item  services-slider__item--credit">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
         </ul>
         <input type="radio" id="services-control-1" name="services-control" checked>
@@ -221,7 +212,7 @@
        <section class="main-info-wrap">
         <h2 class="visually-hidden">Информация о "DEVICE"</h2>
         <section class="main-info">
-          <h3 class="main-info__title">О нас</h2>
+          <h3 class="main-info__title">О нас</h3>
           <div class="main-info__descr">
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -235,7 +226,7 @@
         </section>
 
         <section class="main-contacts">
-          <h3 class="main-contacts__title">Контакты</h2>
+          <h3 class="main-contacts__title">Контакты</h3>
           <p>
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
@@ -255,10 +246,10 @@
             <a class="page-footer__user-link" href="#">Войти</a>
           </li>
           <li>
-            <a class="page-footer__user-btn" href="#">Сравнить</a>
+            <a class="page-footer__user-link" href="#">Сравнить</a>
           </li>
           <li>
-            <a class="page-footer__user-btn" href="#">Корзина</a>
+            <a class="page-footer__user-link" href="#">Корзина</a>
           </li>
         </ul>
       </section>
@@ -306,7 +297,8 @@
     </section>
 
     <section class="popup-map  popup-map--active">
-    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A629b2e37f3c0e18dc5fe434ead5cd83ffa327cabe3900fddd0eaddcb70201760&amp;source=constructor" width="960" height="559" frameborder="0"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A629b2e37f3c0e18dc5fe434ead5cd83ffa327cabe3900fddd0eaddcb70201760&amp;source=constructor" width="960" height="559"></iframe>
+      <span>Закрыть</span>
     </section>
   </body>
 </html>
