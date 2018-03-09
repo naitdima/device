@@ -19,7 +19,7 @@
             </form>
           </li>
           <li class="main-nav__user-item">
-            <a class="main-nav__user-link  main-nav__user-link--user-name" href="#">Валентин Петухов</a>
+            <a class="main-nav__user-link  main-nav__user-link--user-name" href="profile.html">Валентин Петухов</a>
             <a class="main-nav__user-logout" href="#">Выйти</a>
           </li>
           <li class="main-nav__user-item">
@@ -83,23 +83,23 @@
             <ul class="filter__checkbox-list">
                 <li class="filter__checkbox-item">
                   <label for="filter-check-1">Черный</label>
-                  <input class="visually-hidden" type="checkbox" name="black" id="filter-check-1">
+                  <input class="visually-hidden" id="filter-check-1" type="checkbox" name="black">
                 </li>
                 <li class="filter__checkbox-item">
                   <label for="filter-check-2">Белый</label>
-                  <input class="visually-hidden" type="checkbox" name="white" id="filter-check-2">
+                  <input class="visually-hidden" id="filter-check-2" type="checkbox" name="white">
                 </li>
                 <li class="filter__checkbox-item">
                   <label for="filter-check-3">Синий</label>
-                  <input class="visually-hidden" type="checkbox" name="blue" id="filter-check-3">
+                  <input class="visually-hidden" id="filter-check-3" type="checkbox" name="blue">
                 </li>
                 <li class="filter__checkbox-item">
                   <label for="filter-check-4">Красный</label>
-                  <input class="visually-hidden" type="checkbox" name="red" id="filter-check-4">
+                  <input class="visually-hidden" id="filter-check-4" type="checkbox" name="red">
                 </li>
                 <li class="filter__checkbox-item">
                   <label for="filter-check-5">Розовый</label>
-                  <input class="visually-hidden" type="checkbox" name="pink" id="filter-check-5">
+                  <input class="visually-hidden" id="filter-check-5" type="checkbox" name="pink">
                 </li>
               </ul>
           </fieldset>
@@ -108,58 +108,14 @@
             <ul class="filter__radio-list">
                 <li class="filter__radio-item">
                   <label class="filter__control  filter__control--active" for="filter-control-1">Есть</label>
-                  <input class="visually-hidden" id="filter-control-1" type="radio" name="filter-control" value="yes">
+                  <input class="visually-hidden" id="filter-control-1" type="radio" name="bluetooth" value="yes">
                 </li>
                 <li class="filter__radio-item">
                   <label class="filter__control" for="filter-control-2">Нет</label>
-                  <input class="visually-hidden" id="filter-control-2" type="radio" name="filter-control" value="no">
+                  <input class="visually-hidden" id="filter-control-2" type="radio" name="bluetooth" value="no">
                 </li>
               </ul>
           </fieldset>
-          <!-- <ul class="filter__list">
-            <li class="filter__item">
-              <h3>Стоимость</h3>
-              <div class="filter-range"></div>
-            </li>
-            <li class="filter__item">
-              <h3>Цвет</h3>
-              <ul class="filter__checkbox-list">
-                <li class="filter__checkbox-item">
-                  <label for="filter-check-1">Черный</label>
-                  <input type="checkbox" name="black" id="filter-check-1">
-                </li>
-                <li class="filter__checkbox-item">
-                  <label for="filter-check-2">Белый</label>
-                  <input type="checkbox" name="white" id="filter-check-2">
-                </li>
-                <li class="filter__checkbox-item">
-                  <label for="filter-check-3">Синий</label>
-                  <input type="checkbox" name="blue" id="filter-check-3">
-                </li>
-                <li class="filter__checkbox-item">
-                  <label for="filter-check-4">Красный</label>
-                  <input type="checkbox" name="red" id="filter-check-4">
-                </li>
-                <li class="filter__checkbox-item">
-                  <label for="filter-check-5">Розовый</label>
-                  <input type="checkbox" name="pink" id="filter-check-5">
-                </li>
-              </ul>
-            </li>
-            <li class="filter__item">
-              <h3>Bluetooth</h3>
-              <ul class="filter__radio-list">
-                <li class="filter__radio-item">
-                  <label class="filter__control  filter__control--active" for="filter-control-1">Есть</label>
-                  <input type="radio" name="filter-control" id="filter-control-1">
-                </li>
-                <li class="filter__radio-item">
-                  <label class="filter__control" for="filter-control-2">Нет</label>
-                  <input type="radio" name="filter-control" id="filter-control-2">
-                </li>
-              </ul>
-            </li>
-          </ul> -->
           <button class="btn" type="submit">Показать</button>
         </form>
       </section>
@@ -169,16 +125,16 @@
         <section class="goods__sort">
           <h3>Сортировка</h3>
           <ul class="goods__sort-list">
-            <li class="goods__sort-item  goods__sort-item--active"><a href="#"></a>По цене</li>
-            <li class="goods__sort-item"><a href="#"></a>По типу</li>
-            <li class="goods__sort-item"><a href="#"></a>По популярности</li>
+            <li class="goods__sort-item  goods__sort-item--active"><button type="button">По цене</button></li>
+            <li class="goods__sort-item"><button type="button">По типу</button></li>
+            <li class="goods__sort-item"><button type="button">По популярности</button></li>
           </ul>
           <ul class="goods__sort">
             <li class="goods__sort-up">
-              <a href="#">По возрастанию</a>
+              <button type="button">По возрастанию</button>
             </li>
             <li class="goods__sort-down  goods__sort-down--active">
-              <a href="#">По убыванию</a>
+              <button type="button">По убыванию</button>
             </li>
           </ul>
         </section>
@@ -188,23 +144,23 @@
             <img src="img/amateur-selfie-stick.jpg" alt="Любительская селфи-палка" width="360" height="380">
             <span class="goods__new">NEW</span>
             <div class="goods__hover">
-              <a class="btn" href="#">В корзину</a>
-              <a class="goods__add" href="#">Добавить к сравнению</a>
+              <button class="btn" type="button">В корзину</button>
+              <button class="goods__add" type="button">Добавить к сравнению</button>
             </div>
             <div class="goods__info">
-              <a href="amateur-selfie-stick.html">Любительская селфи-палка</a>
+              <a href="#">Любительская селфи-палка</a>
               <span class="goods__price">500 руб.</span>
             </div>
           </li>
           <li class="goods__item">
             <img src="img/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
             <span class="goods__new">NEW</span>
-            <div class="goods__hover  goods__hover--active">
-              <a class="btn" href="#">В корзину</a>
-              <a class="goods__add" href="#">Добавить к сравнению</a>
+            <div class="goods__hover">
+              <button class="btn" type="button">В корзину</button>
+              <button class="goods__add" type="button">Добавить к сравнению</button>
             </div>
             <div class="goods__info">
-              <a href="professional-selfie-stick.html">Профессиональная селфи-палка</a>
+              <a href="#">Профессиональная селфи-палка</a>
               <span class="goods__price">1500 руб.</span>
             </div>
           </li>
@@ -212,23 +168,23 @@
             <img src="img/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
             <span class="goods__new">NEW</span>
             <div class="goods__hover">
-              <a class="btn" href="#">В корзину</a>
-              <a class="goods__add" href="#">Добавить к сравнению</a>
+              <button class="btn" type="button">В корзину</button>
+              <button class="goods__add" type="button">Добавить к сравнению</button>
             </div>
             <div class="goods__info">
-              <a href="unsinkable-selfie-stick.html">Непотопляемая селфи-палка</a>
+              <a href="#">Непотопляемая селфи-палка</a>
               <span class="goods__price">2500 руб.</span>
             </div>
           </li>
           <li class="goods__item">
             <img src="img/follow-me-selfie-stick.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-            <span class="goods__new  goods__new--action">NEW</span>
+            <span class="goods__new  goods__new--active">NEW</span>
             <div class="goods__hover">
-              <a class="btn" href="#">В корзину</a>
-              <a class="goods__add" href="#">Добавить к сравнению</a>
+              <button class="btn" type="button">В корзину</button>
+              <button class="goods__add" type="button">Добавить к сравнению</button>
             </div>
             <div class="goods__info">
-              <a href="follow-me-selfie-stick.html">Селфи-палка «Следуй за мной»</a>
+              <a href="#">Селфи-палка «Следуй за мной»</a>
               <span class="goods__price">4900 руб.</span>
             </div>
           </li>
@@ -262,7 +218,7 @@
         </div>
         <ul class="page-footer__user-list">
           <li>
-            <a class="page-footer__user-link  page-footer__user-link--user-name" href="#">Валентин Петухов</a>
+            <a class="page-footer__user-link  page-footer__user-link--user-name" href="profile.html">Валентин Петухов</a>
             <a class="page-footer__user-logout" href="#">Выйти</a>
           </li>
           <li>

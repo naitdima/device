@@ -59,15 +59,15 @@
         <ul class="promo-slider__controls-list">
           <li class="promo-slider__controls-item">
             <label class="promo-slider__control  promo-slider__control--active" for="promo-control-1"></label>
-            <input type="radio" id="promo-control-1" name="promo-control" checked>
+            <input class="visually-hidden" id="promo-control-1" type="radio" name="promo-control" checked>
           </li>
           <li class="promo-slider__controls-item">
             <label class="promo-slider__control" for="promo-control-2"></label>
-            <input type="radio" id="promo-control-2" name="promo-control">
+            <input class="visually-hidden" id="promo-control-2" type="radio" name="promo-control">
           </li>
           <li class="promo-slider__controls-item">
             <label class="promo-slider__control" for="promo-control-3"></label>
-            <input type="radio" id="promo-control-3" name="promo-control">
+            <input class="visually-hidden" id="promo-control-3" type="radio" name="promo-control">
           </li>
         </ul>
 
@@ -139,14 +139,14 @@
             </a>
           </li>
           <li class="main-goods__item">
-            <a href="img/main-goods-camera.svg">
-              <img src="#" alt="Экшн-камера" width="71" height="87">
+            <a href="#">
+              <img src="img/main-goods-camera.svg" alt="Экшн-камера" width="71" height="87">
               <p>Экшн-камеры</p>
             </a>
           </li>
           <li class="main-goods__item">
             <a href="#">
-              <img src="img/main-goods-fintess.svg" alt="Фитнес-браслет" width="107" height="65">
+              <img src="img/main-goods-fitness.svg" alt="Фитнес-браслет" width="107" height="65">
               <p>Фитнес-браслеты</p>
             </a>
           </li>
@@ -169,8 +169,11 @@
         <h2 class="visually-hidden">Наши сервисы</h2>
         <div class="services-slider__controls">
           <label class="services-slider__control  services-slider__control--active" for="services-control-1">Доставка</label>
+          <input class="visually-hidden" id="services-control-1" type="radio" name="services-control" checked>
           <label class="services-slider__control" for="services-control-2">Гарантия</label>
+          <input class="visually-hidden" id="services-control-2" type="radio" name="services-control">
           <label class="services-slider__control" for="services-control-3">Кредит</label>
+          <input class="visually-hidden" id="services-control-3" type="radio" name="services-control">
         </div>
         <ul class="services-slider__list">
           <li class="services-slider__item  services-slider__item--active  services-slider__item--delivery">
@@ -186,9 +189,6 @@
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
         </ul>
-        <input type="radio" id="services-control-1" name="services-control" checked>
-        <input type="radio" id="services-control-2" name="services-control">
-        <input type="radio" id="services-control-3" name="services-control">
       </section>
 
       <section class="main-brands">
@@ -212,7 +212,7 @@
        <section class="main-info-wrap">
         <h2 class="visually-hidden">Информация о "DEVICE"</h2>
         <article class="main-info">
-          <h3 class="main-info__title">О нас</h3>
+          <h3>О нас</h3>
           <div class="main-info__descr">
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -226,11 +226,14 @@
         </article>
 
         <section class="main-contacts">
-          <h3 class="main-contacts__title">Контакты</h3>
+          <h3>Контакты</h3>
           <p>
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
-          <a class="main-contacts__map" href="map.html"><img src="img/main-contacts-map.jpg" alt="г. Москва, ул. Строителей, 15" width="560" height="222"></a>
+          <a class="main-contacts__map" href="map.html">
+            <img src="img/main-contacts-map.jpg" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
+            <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A629b2e37f3c0e18dc5fe434ead5cd83ffa327cabe3900fddd0eaddcb70201760&amp;source=constructor" width="560" height="222"></iframe> -->
+          </a>
           <a class="btn" href="#">Напишите нам</a>
         </section>
       </section>
@@ -282,18 +285,16 @@
 
     <section class="popup-write-us  popup-write-us--active">
       <h2 class="visually-hidden">Форма для обратной связи</h2>
-      <form method="post">
+      <form method="post" action="https://echo.htmlacademy.ru">
         <label for="user-name">Ваше имя:</label>
-        <input type="text" id="user-name" placeholder="Имя Фамилия">
-
-        <label for="user-mail">Ваш e-mail:</label>
-        <input type="email" id="user-mail" placeholder="email@example.com">
-        
-        <label for="user-letter">Текст письма:</label>
-        <textarea name="text-letter" id="user-letter" placeholder="В свободной форме"></textarea>
+        <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+        <label for="user-email">Ваш e-mail:</label>
+        <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+        <label for="user-message">Текст письма:</label>
+        <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
         <button class="btn" type="submit">Отправить</button>
       </form>
-      <span>Закрыть</span>
+      <button class="popup-write-us__close" type="button">Закрыть</button>
     </section>
 
     <section class="popup-map  popup-map--active">
