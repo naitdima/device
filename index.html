@@ -17,9 +17,9 @@
         <ul class="main-nav__user-list">
           <li class="main-nav__user-item">
             <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru">
-              <label for="search"><img src="img/search.svg" alt="Поиск"></label>
-              <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-              <button type="submit">Найти</button>
+              <label class="main-nav__search-label" for="search"><img src="img/search.svg" alt="Поиск" width="16" height="16"></label>
+              <input class="main-nav__search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+              <button class="main-nav__search-btn" type="submit">Найти</button>
             </form>
           </li>
           <li class="main-nav__user-item">
@@ -28,8 +28,8 @@
           <li class="main-nav__user-item">
             <a class="main-nav__user-link  main-nav__user-link--compare" href="#">Сравнить</a>
           </li>
-          <li class="main-nav__user-item  main-nav__user-item--cart">
-            <a class="main-nav__user-link" href="#">Корзина</a>
+          <li class="main-nav__user-item">
+            <a class="main-nav__user-link  main-nav__user-link--cart" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="main-nav__list">
@@ -131,39 +131,51 @@
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="main-goods__list">
           <li class="main-goods__item">
-            <a href="#">
-              <img src="img/main-goods-vr.svg" alt="Очки VR" width="97" height="55">
-              <p>Виртуальная реальность</p>
+            <a class="main-goods__item-link" href="#">
+              <div class="main-goods__item-wrap">
+                <img class="main-goods__item-img" src="img/main-goods-vr.svg" alt="Очки VR" width="97" height="55">
+              </div>
+              <p class="main-goods__item-name">Виртуальная реальность</p>
             </a>
           </li>
           <li class="main-goods__item">
-            <a href="catalog.html">
-              <img src="img/main-goods-selfie.svg" alt="Монопод" width="86" height="117">
-              <p>Моноподы для селфи</p>
+            <a class="main-goods__item-link" href="catalog.html">
+              <div class="main-goods__item-wrap">
+                <img class="main-goods__item-img" src="img/main-goods-selfie.svg" alt="Монопод" width="86" height="117">
+              </div>
+              <p class="main-goods__item-name">Моноподы для селфи</p>
             </a>
           </li>
           <li class="main-goods__item">
-            <a href="#">
-              <img src="img/main-goods-camera.svg" alt="Экшн-камера" width="71" height="87">
-              <p>Экшн-камеры</p>
+            <a class="main-goods__item-link" href="#">
+              <div class="main-goods__item-wrap">
+                <img class="main-goods__item-img" src="img/main-goods-camera.svg" alt="Экшн-камера" width="71" height="87">
+              </div>
+              <p class="main-goods__item-name">Экшн-камеры</p>
             </a>
           </li>
           <li class="main-goods__item">
-            <a href="#">
-              <img src="img/main-goods-fitness.svg" alt="Фитнес-браслет" width="107" height="65">
-              <p>Фитнес-браслеты</p>
+            <a class="main-goods__item-link" href="#">
+              <div class="main-goods__item-wrap">
+                <img class="main-goods__item-img" src="img/main-goods-fitness.svg" alt="Фитнес-браслет" width="107" height="65">
+              </div>
+              <p class="main-goods__item-name">Фитнес-браслеты</p>
             </a>
           </li>
           <li class="main-goods__item">
-            <a href="#">
-              <img src="img/main-goods-clock.svg" alt="Умные часы" width="56" height="98">
-              <p>Умные часы</p>
+            <a class="main-goods__item-link" href="#">
+              <div class="main-goods__item-wrap">
+                <img class="main-goods__item-img" src="img/main-goods-clock.svg" alt="Умные часы" width="56" height="98">
+              </div>
+              <p class="main-goods__item-name">Умные часы</p>
             </a>
           </li>
           <li class="main-goods__item">
-            <a href="#">
-              <img src="img/main-goods-copter.svg" alt="Квадрокоптер" width="132" height="69">
-              <p>Квадрокоптеры</p>
+            <a class="main-goods__item-link" href="#">
+              <div class="main-goods__item-wrap">
+                <img class="main-goods__item-img" src="img/main-goods-copter.svg" alt="Квадрокоптер" width="132" height="69">
+              </div>
+              <p class="main-goods__item-name">Квадрокоптеры</p>
             </a>
           </li>
         </ul>
@@ -184,7 +196,7 @@
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li class="services-slider__item  services-slider__item--guarantee">
+          <li class="services-slider__item  services-slider__item--warranty">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом &mdash; не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
           </li>
@@ -199,16 +211,24 @@
         <h2 class="visually-hidden">Популярные бренды</h2>
         <ul class="main-brands__list">
           <li class="main-brands__item">
-            <a href="#"><img src="img/main-brands-dji.png" alt="DJI" width="260" height="100"></a>
+            <a class="main-brands__link" href="#">
+              <img class="main-brands__img" src="img/main-brands-dji.png" alt="DJI" width="260" height="100">
+            </a>
           </li>
           <li class="main-brands__item">
-            <a href="#"><img src="img/main-brands-spg.png" alt="SP gadgets" width="260" height="100"></a>
+            <a class="main-brands__link" href="#">
+              <img class="main-brands__img" src="img/main-brands-spg.png" alt="SP gadgets" width="260" height="100">
+            </a>
           </li>
           <li class="main-brands__item">
-            <a href="#"><img src="img/main-brands-gopro.png" alt="GoPro" width="260" height="100"></a>
+            <a class="main-brands__link" href="#">
+              <img class="main-brands__img" src="img/main-brands-gopro.png" alt="GoPro" width="260" height="100">
+            </a>
           </li>
           <li class="main-brands__item">
-            <a href="#"><img src="img/main-brands-vive.png" alt="Vive" width="260" height="100"></a>
+            <a class="main-brands__link" href="#">
+              <img class="main-brands__img" src="img/main-brands-vive.png" alt="Vive" width="260" height="100">
+            </a>
           </li>
         </ul>
       </section>
