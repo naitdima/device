@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс &mdash; Каталог товаров</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -13,7 +16,7 @@
       <nav class="main-nav">
         <ul class="main-nav__user-list">
           <li class="main-nav__user-item">
-            <form class="main-nav__search" method="get">
+            <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru">
               <button type="submit">Поиск</button>
               <input type="search" name="search" placeholder="Поиск по сайту">
             </form>
@@ -125,70 +128,70 @@
         <section class="goods__sort">
           <h3>Сортировка</h3>
           <ul class="goods__sort-list">
-            <li class="goods__sort-item  goods__sort-item--active"><a href="">По цене</a></li>
-            <li class="goods__sort-item"><a href="">По типу</a></li>
-            <li class="goods__sort-item"><a href="">По популярности</a></li>
+            <li class="goods__sort-item  goods__sort-item--active"><a href="#">По цене</a></li>
+            <li class="goods__sort-item"><a href="#">По типу</a></li>
+            <li class="goods__sort-item"><a href="#">По популярности</a></li>
           </ul>
           <ul class="goods__sort">
             <li class="goods__sort-up">
-              <a href="">По возрастанию</a>
+              <a href="#">По возрастанию</a>
             </li>
             <li class="goods__sort-down  goods__sort-down--active">
-              <a href="">По убыванию</a>
+              <a href="#">По убыванию</a>
             </li>
           </ul>
         </section>
         
-        <ul class="goods__list">
-          <li class="goods__item">
+        <section class="goods__list">
+          <article class="goods-item">
             <img src="img/amateur-selfie-stick.jpg" alt="Любительская селфи-палка" width="360" height="380">
-            <span class="goods__new">NEW</span>
-            <div class="goods__hover">
-              <button class="btn" type="button">В корзину</button>
-              <button class="goods__add" type="button">Добавить к сравнению</button>
+            <span class="goods-item__new">NEW</span>
+            <div class="goods-item__hover">
+              <a class="btn" href="#">В корзину</a>
+              <a class="goods-item__add" href="#">Добавить к сравнению</a>
             </div>
-            <div class="goods__info">
-              <a href="#">Любительская селфи-палка</a>
-              <span class="goods__price">500 руб.</span>
+            <div class="goods-item__info">
+              <h1><a href="#">Любительская селфи-палка</a></h1>
+              <span class="goods-item__price">500 руб.</span>
             </div>
-          </li>
-          <li class="goods__item">
+          </article>
+          <article class="goods-item">
             <img src="img/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-            <span class="goods__new">NEW</span>
-            <div class="goods__hover">
-              <button class="btn" type="button">В корзину</button>
-              <button class="goods__add" type="button">Добавить к сравнению</button>
+            <span class="goods-item__new">NEW</span>
+            <div class="goods-item__hover">
+              <a class="btn" href="#">В корзину</a>
+              <a class="goods-item__add" href="#">Добавить к сравнению</a>
             </div>
-            <div class="goods__info">
-              <a href="#">Профессиональная селфи-палка</a>
-              <span class="goods__price">1500 руб.</span>
+            <div class="goods-item__info">
+              <h1><a href="#">Профессиональная селфи-палка</a></h1>
+              <span class="goods-item__price">1500 руб.</span>
             </div>
-          </li>
-          <li class="goods__item">
+          </article>
+          <article class="goods-item">
             <img src="img/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-            <span class="goods__new">NEW</span>
-            <div class="goods__hover">
-              <button class="btn" type="button">В корзину</button>
-              <button class="goods__add" type="button">Добавить к сравнению</button>
+            <span class="goods-item__new">NEW</span>
+            <div class="goods-item__hover">
+              <a class="btn" href="#">В корзину</a>
+              <a class="goods-item__add" href="#">Добавить к сравнению</a>
             </div>
-            <div class="goods__info">
-              <a href="#">Непотопляемая селфи-палка</a>
-              <span class="goods__price">2500 руб.</span>
+            <div class="goods-item__info">
+              <h1><a href="#">Непотопляемая селфи-палка</a></h1>
+              <span class="goods-item__price">2500 руб.</span>
             </div>
-          </li>
-          <li class="goods__item">
+          </article>
+          <article class="goods-item">
             <img src="img/follow-me-selfie-stick.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-            <span class="goods__new  goods__new--active">NEW</span>
-            <div class="goods__hover">
-              <button class="btn" type="button">В корзину</button>
-              <button class="goods__add" type="button">Добавить к сравнению</button>
+            <span class="goods-item__new  goods-item__new--active">NEW</span>
+            <div class="goods-item__hover">
+              <a class="btn" href="#">В корзину</a>
+              <a class="goods-item__add" href="#">Добавить к сравнению</a>
             </div>
-            <div class="goods__info">
-              <a href="#">Селфи-палка «Следуй за мной»</a>
-              <span class="goods__price">4900 руб.</span>
+            <div class="goods-item__info">
+              <h1><a href="#">Селфи-палка «Следуй за мной»</a></h1>
+              <span class="goods-item__price">4900 руб.</span>
             </div>
-          </li>
-        </ul>
+          </article>
+        </section>
 
         
         <ul class="pagination">
@@ -231,7 +234,7 @@
       </div>
       <div class="page-footer__info">
         <div class="page-footer__address">
-          г. Москва, ул. Строителей, 15
+          <span>г. Москва, ул. Строителей, 15</span>
         </div>
         <div class="page-footer__services">
           <a href="#">Доставка</a>

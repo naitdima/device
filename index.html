@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -13,9 +16,10 @@
       <nav class="main-nav">
         <ul class="main-nav__user-list">
           <li class="main-nav__user-item">
-            <form class="main-nav__search" method="get">
-              <button type="submit">Поиск</button>
-              <input type="search" name="search" placeholder="Поиск по сайту">
+            <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru">
+              <label for="search"><img src="img/search.svg" alt="Поиск"></label>
+              <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+              <button type="submit">Найти</button>
             </form>
           </li>
           <li class="main-nav__user-item">
@@ -258,7 +262,7 @@
       </div>
       <div class="page-footer__info">
         <div class="page-footer__address">
-          г. Москва, ул. Строителей, 15
+          <span>г. Москва, ул. Строителей, 15</span>
         </div>
         <div class="page-footer__services">
           <a href="#">Доставка</a>
@@ -299,7 +303,7 @@
 
     <section class="popup-map  popup-map--active">
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A629b2e37f3c0e18dc5fe434ead5cd83ffa327cabe3900fddd0eaddcb70201760&amp;source=constructor" width="960" height="559"></iframe>
-      <span>Закрыть</span>
+      <button class="popup-map__close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
