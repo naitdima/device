@@ -17,8 +17,9 @@
         <ul class="main-nav__user-list">
           <li class="main-nav__user-item">
             <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru">
-              <button type="submit">Поиск</button>
-              <input type="search" name="search" placeholder="Поиск по сайту">
+              <label class="main-nav__search-label" for="search"><img src="img/search.svg" alt="Поиск" width="16" height="16"></label>
+              <input class="main-nav__search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+              <button class="main-nav__search-btn" type="submit">Найти</button>
             </form>
           </li>
           <li class="main-nav__user-item">
@@ -85,24 +86,24 @@
             <legend>Цвет</legend>
             <ul class="filter__checkbox-list">
                 <li class="filter__checkbox-item">
-                  <label for="filter-check-1">Черный</label>
-                  <input class="visually-hidden" id="filter-check-1" type="checkbox" name="black">
+                  <label class="filter__checkbox-label" for="filter-check-1">Черный</label>
+                  <input class="filter__checkbox-input  visually-hidden" id="filter-check-1" type="checkbox" name="black">
                 </li>
                 <li class="filter__checkbox-item">
-                  <label for="filter-check-2">Белый</label>
-                  <input class="visually-hidden" id="filter-check-2" type="checkbox" name="white">
+                  <label class="filter__checkbox-label" for="filter-check-2">Белый</label>
+                  <input class="filter__checkbox-input  visually-hidden" id="filter-check-2" type="checkbox" name="white">
                 </li>
                 <li class="filter__checkbox-item">
-                  <label for="filter-check-3">Синий</label>
-                  <input class="visually-hidden" id="filter-check-3" type="checkbox" name="blue">
+                  <label class="filter__checkbox-label" for="filter-check-3">Синий</label>
+                  <input class="filter__checkbox-input  visually-hidden" id="filter-check-3" type="checkbox" name="blue">
                 </li>
                 <li class="filter__checkbox-item">
-                  <label for="filter-check-4">Красный</label>
-                  <input class="visually-hidden" id="filter-check-4" type="checkbox" name="red">
+                  <label class="filter__checkbox-label" for="filter-check-4">Красный</label>
+                  <input class="filter__checkbox-input  visually-hidden" id="filter-check-4" type="checkbox" name="red">
                 </li>
                 <li class="filter__checkbox-item">
-                  <label for="filter-check-5">Розовый</label>
-                  <input class="visually-hidden" id="filter-check-5" type="checkbox" name="pink">
+                  <label class="filter__checkbox-label" for="filter-check-5">Розовый</label>
+                  <input class="filter__checkbox-input  visually-hidden" id="filter-check-5" type="checkbox" name="pink">
                 </li>
               </ul>
           </fieldset>
@@ -110,7 +111,7 @@
             <legend>Bluetooth</legend>
             <ul class="filter__radio-list">
                 <li class="filter__radio-item">
-                  <label class="filter__control  filter__control--active" for="filter-control-1">Есть</label>
+                  <label class="filter__control" for="filter-control-1">Есть</label>
                   <input class="visually-hidden" id="filter-control-1" type="radio" name="bluetooth" value="yes">
                 </li>
                 <li class="filter__radio-item">

@@ -249,6 +249,18 @@ ul {
   background-image: url('../img/black-cart.svg');
 }
 
+.main-nav__user-logout {
+  color: rgba(0, 0, 0, .3);
+}
+
+.main-nav__user-logout:hover {
+  color: rgba(0, 0, 0, .6);
+}
+
+.main-nav__user-logout:active {
+  color: rgba(0, 0, 0, .1);
+}
+
 .main-nav__list {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
@@ -303,6 +315,68 @@ ul {
 .promo-slider__item .btn {
   width: 220px;
 }
+
+.promo-slider__control {
+  position: relative;
+
+  display: block;
+
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+
+  cursor: pointer;
+
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+
+.promo-slider__control::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  display: none;
+
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+
+  content: '';
+
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.promo-slider__input:checked + .promo-slider__control::before {
+  display: block;
+}
+
+
+.promo-slider__input[id='promo-control-1']:checked .promo-slider__item--1 {
+  display: block;
+}
+.promo-slider__input[id='promo-control-1']:checked .promo-slider__item--2,
+.promo-slider__input[id='promo-control-1']:checked .promo-slider__item--3 {
+  display: none;
+}
+
+.promo-slider__input[id='promo-control-2']:checked .promo-slider__item--2 {
+  display: block;
+}
+.promo-slider__input[id='promo-control-2']:checked .promo-slider__item--1,
+.promo-slider__input[id='promo-control-2']:checked .promo-slider__item--3 {
+  display: none;
+}
+
+.promo-slider__input[id='promo-control-3']:checked .promo-slider__item--3 {
+  display: block;
+}
+.promo-slider__input[id='promo-control-3']:checked .promo-slider__item--1,
+.promo-slider__input[id='promo-control-3']:checked .promo-slider__item--2 {
+  display: none;
+}
+
 
 .promo-slider__advantages td {
   font-family: 'Gilroy', 'Arial', sans-serif;
@@ -737,4 +811,132 @@ ul {
 
 .popup-write-us__close:active {
   background-color: rgba(240, 197, 46, .5);
+}
+
+.page-content__title {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+
+  letter-spacing: .01em;
+
+  color: #000;
+}
+
+.breadcrumbs__item a {
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: .01em;
+
+  color: rgba(0, 0, 0, .3);
+}
+
+.breadcrumbs__item a:hover {
+  color: rgba(0, 0, 0, .6);
+}
+
+.breadcrumbs__item a:active {
+  color: rgba(0, 0, 0, .1);
+}
+
+.sidebar h2 {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+
+  letter-spacing: .2em;
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.filter__item {
+  border: none;
+}
+
+.filter__item legend {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  letter-spacing: .01em;
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.filter__checkbox-label {
+  font-size: 14px;
+  line-height: 40px;
+
+  position: relative;
+
+  letter-spacing: .01em;
+
+  color: #000;
+}
+
+.filter__checkbox-input:disabled .filter__checkbox-label,
+.filter__checkbox-input:checked:disabled .filter__checkbox-label {
+  color: #a6a6a6;
+}
+
+.filter__checkbox-label::before {
+  position: absolute;
+  bottom: -3px;
+  left: -41px;
+
+  width: 23px;
+  height: 23px;
+
+  content: '';
+
+  background-image: url('../img/checkbox-off.svg');
+}
+
+.filter__checkbox-label::after {
+  position: absolute;
+  bottom: -3px;
+  left: -41px;
+
+  display: none;
+
+  width: 27px;
+  height: 23px;
+
+  content: '';
+
+  background-image: url('../img/checkbox-on.svg');
+}
+
+.filter__checkbox-input:hover .filter__checkbox-label::before {
+  opacity: .6;
+}
+
+.filter__checkbox-input:checked:disabled .filter__checkbox-label::before {
+  opacity: .25;
+}
+
+.filter__checkbox-input:checked .filter__checkbox-label::after {
+  display: block;
+}
+
+.filter__checkbox-input:checked .filter__checkbox-label::before {
+  display: none;
+}
+
+.filter__checkbox-input:checked:hover .filter__checkbox-label::after {
+  opacity: .6;
+}
+
+.filter__checkbox-input:checked:active .filter__checkbox-label::after {
+  display: none;
+}
+
+.filter__checkbox-input:checked:active .filter__checkbox-label::before {
+  display: block;
 }
