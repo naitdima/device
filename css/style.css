@@ -423,6 +423,7 @@ ul {
   line-height: 24px;
 
   position: relative;
+  z-index: 1;
 
   display: block;
 
@@ -476,7 +477,20 @@ ul {
   transition: all .3s linear;
 }
 
-.services-slider__control:active::before {
+.services-slider__input[id='services-control-1']:checked ~ .services-slider__controls label[for='services-control-1'] {
+  color: #f7e184;
+}
+
+.services-slider__input[id='services-control-2']:checked ~ .services-slider__controls label[for='services-control-2'] {
+  color: #f7e184;
+}
+
+.services-slider__input[id='services-control-3']:checked ~ .services-slider__controls label[for='services-control-3'] {
+  color: #f7e184;
+}
+
+.services-slider__input[id='services-control-1']:checked ~ .services-slider__controls label[for='services-control-1']::before {
+  z-index: -1;
   top: 0;
 
   height: 40px;
@@ -488,7 +502,8 @@ ul {
   background-color: #000;
 }
 
-.services-slider__control:active::after {
+.services-slider__input[id='services-control-1']:checked ~ .services-slider__controls label[for='services-control-1']::after {
+  z-index: -1;
   top: 0;
 
   width: 120px;
@@ -499,6 +514,95 @@ ul {
 
   color: #f7e184;
   background-color: #000;
+}
+
+.services-slider__input[id='services-control-2']:checked ~ .services-slider__controls label[for='services-control-2']::before {
+  z-index: -1;
+  top: 0;
+
+  height: 40px;
+  margin: 0;
+
+  transition: all .3s linear;
+
+  color: #f7e184;
+  background-color: #000;
+}
+
+.services-slider__input[id='services-control-2']:checked ~ .services-slider__controls label[for='services-control-2']::after {
+  z-index: -1;
+  top: 0;
+
+  width: 120px;
+  height: 40px;
+  margin: 0;
+
+  transition: all .3s linear;
+
+  color: #f7e184;
+  background-color: #000;
+}
+
+.services-slider__input[id='services-control-3']:checked ~ .services-slider__controls label[for='services-control-3']::before {
+  z-index: -1;
+  top: 0;
+
+  height: 40px;
+  margin: 0;
+
+  transition: all .3s linear;
+
+  color: #f7e184;
+  background-color: #000;
+}
+
+.services-slider__input[id='services-control-3']:checked ~ .services-slider__controls label[for='services-control-3']::after {
+  z-index: -1;
+  top: 0;
+
+  width: 120px;
+  height: 40px;
+  margin: 0;
+
+  transition: all .3s linear;
+
+  color: #f7e184;
+  background-color: #000;
+}
+
+.services-slider__input[id='services-control-2']:checked ~ .services-slider__controls label[for='services-control-2']::before {
+  display: block;
+}
+
+.services-slider__input[id='services-control-3']:checked ~ .services-slider__controls label[for='services-control-3']::before {
+  display: block;
+}
+
+.services-slider__input[id='services-control-1']:checked ~ .services-slider__controls label[for='services-control-1']::before {
+  display: block;
+}
+
+.services-slider__input[id='services-control-2']:checked ~ .services-slider__controls label[for='services-control-2']::before {
+  display: block;
+}
+
+.services-slider__input[id='services-control-3']:checked ~ .services-slider__controls label[for='services-control-3']::before {
+  display: block;
+}
+
+.services-slider__input[id='services-control-1']:checked ~ .services-slider__item--warranty,
+.services-slider__input[id='services-control-1']:checked ~ .services-slider__item--credit {
+  display: none;
+}
+
+.services-slider__input[id='services-control-2']:checked ~ .services-slider__item--delivery,
+.services-slider__input[id='services-control-2']:checked ~ .services-slider__item--credit {
+  display: none;
+}
+
+.services-slider__input[id='services-control-3']:checked ~ .services-slider__item--delivery,
+.services-slider__input[id='services-control-3']:checked ~ .services-slider__item--warranty {
+  display: none;
 }
 
 .services-slider__item--delivery {
@@ -1005,5 +1109,3 @@ ul {
 .goods__sort-item--active {
   color: rgba(0, 0, 0, 1);
 }
-
-
