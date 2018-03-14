@@ -60,71 +60,64 @@
     <main class="page-content">
       <section class="promo-slider">
         <h2 class="visually-hidden">Промо-слайдер</h2>
-        <ul class="promo-slider__controls-list">
-          <li class="promo-slider__controls-item">
-            <input class="promo-slider__input  visually-hidden" id="promo-control-1" type="radio" name="promo-control" checked>
-            <label class="promo-slider__control" for="promo-control-1"></label>
-          </li>
-          <li class="promo-slider__controls-item">
-            <input class="promo-slider__input  visually-hidden" id="promo-control-2" type="radio" name="promo-control">
-            <label class="promo-slider__control" for="promo-control-2"></label>
-          </li>
-          <li class="promo-slider__controls-item">
-            <input class="promo-slider__input  visually-hidden" id="promo-control-3" type="radio" name="promo-control">
-            <label class="promo-slider__control" for="promo-control-3"></label>
-          </li>
-        </ul>
+        <input class="promo-slider__input" id="promo-control-1" type="radio" name="promo-control" hidden checked>
+        <input class="promo-slider__input" id="promo-control-2" type="radio" name="promo-control" hidden>
+        <input class="promo-slider__input" id="promo-control-3" type="radio" name="promo-control" hidden>
+        
+        <div class="promo-slider__item  promo-slider__item--1">
+          <img src="img/promo-slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486">
+          <b>Делай селфи,<br>как Бен Стиллер!</b>
+          <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a class="btn" href="#">Подробнее</a>
+          <table class="promo-slider__advantages">
+            <tr>
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr>
+              <th>Длина палки</th>
+              <th>Вес палки</th>
+              <th>Материал</th>
+            </tr>
+          </table>
+        </div>
+        <div class="promo-slider__item  promo-slider__item--2">
+          <img src="img/promo-slider-2.png" alt="Фитнес-браслет" width="345" height="485">
+          <b>Худеем<br>правильно!</b>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
+          <a class="btn" href="#">Подробнее</a>
+          <table class="promo-slider__advantages">
+            <tr>
+              <td>48 часов</td>
+            </tr>
+            <tr>
+              <th>Без подзарядки</th>
+            </tr>
+          </table>
+        </div>
+        <div class="promo-slider__item  promo-slider__item--3">
+          <img src="img/promo-slider-3.png" alt="Квадрокоптер" width="526" height="334">
+          <b>Порхает как бабочка,<br>жалит как пчела!</b>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="btn" href="#">Подробнее</a>
+          <table class="promo-slider__advantages">
+            <tr>
+              <td>800 м</td>
+              <td>50 м</td>
+            </tr>
+            <tr>
+              <th>Дальность полета</th>
+              <th>Радиус поражения</th>
+            </tr>
+          </table>
+        </div>
 
-        <ul class="promo-slider__list">
-          <li class="promo-slider__item  promo-slider__item--1">
-            <img src="img/promo-slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486">
-            <b>Делай селфи,<br>как Бен Стиллер!</b>
-            <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a class="btn" href="#">Подробнее</a>
-            <table class="promo-slider__advantages">
-              <tr>
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-              <tr>
-                <th>Длина палки</th>
-                <th>Вес палки</th>
-                <th>Материал</th>
-              </tr>
-            </table>
-          </li>
-          <li class="promo-slider__item  promo-slider__item--2">
-            <img src="img/promo-slider-2.png" alt="Фитнес-браслет" width="345" height="485">
-            <b>Худеем<br>правильно!</b>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
-            <a class="btn" href="#">Подробнее</a>
-            <table class="promo-slider__advantages">
-              <tr>
-                <td>48 часов</td>
-              </tr>
-              <tr>
-                <th>Без подзарядки</th>
-              </tr>
-            </table>
-          </li>
-          <li class="promo-slider__item  promo-slider__item--3">
-            <img src="img/promo-slider-3.png" alt="Квадрокоптер" width="526" height="334">
-            <b>Порхает как бабочка,<br>жалит как пчела!</b>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="btn" href="#">Подробнее</a>
-            <table class="promo-slider__advantages">
-              <tr>
-                <td>800 м</td>
-                <td>50 м</td>
-              </tr>
-              <tr>
-                <th>Дальность полета</th>
-                <th>Радиус поражения</th>
-              </tr>
-            </table>
-          </li>
-        </ul>
+        <div class="promo-slider__controls">
+          <label class="promo-slider__control" for="promo-control-1">Первый слайд</label>
+          <label class="promo-slider__control" for="promo-control-2">Второй слайд</label>
+          <label class="promo-slider__control" for="promo-control-3">Третий слайд</label>
+        </div>
       </section>
 
       <section class="main-goods">
@@ -185,11 +178,11 @@
         <h2 class="visually-hidden">Наши сервисы</h2>
         <div class="services-slider__controls">
           <label class="services-slider__control  services-slider__control--active" for="services-control-1">Доставка</label>
-          <input class="visually-hidden" id="services-control-1" type="radio" name="services-control" checked>
+          <input id="services-control-1" type="radio" name="services-control" hidden checked>
           <label class="services-slider__control" for="services-control-2">Гарантия</label>
-          <input class="visually-hidden" id="services-control-2" type="radio" name="services-control">
+          <input id="services-control-2" type="radio" name="services-control" hidden>
           <label class="services-slider__control" for="services-control-3">Кредит</label>
-          <input class="visually-hidden" id="services-control-3" type="radio" name="services-control">
+          <input id="services-control-3" type="radio" name="services-control" hidden>
         </div>
         <ul class="services-slider__list">
           <li class="services-slider__item  services-slider__item--active  services-slider__item--delivery">

@@ -317,6 +317,8 @@ ul {
 }
 
 .promo-slider__control {
+  font-size: 0;
+
   position: relative;
 
   display: block;
@@ -348,32 +350,30 @@ ul {
   border-radius: 3px;
 }
 
-.promo-slider__input:checked + .promo-slider__control::before {
+.promo-slider__input[id='promo-control-1']:checked ~ .promo-slider__controls label[for='promo-control-1']::before {
   display: block;
 }
 
-
-.promo-slider__input[id='promo-control-1']:checked .promo-slider__item--1 {
+.promo-slider__input[id='promo-control-2']:checked ~ .promo-slider__controls label[for='promo-control-2']::before {
   display: block;
 }
-.promo-slider__input[id='promo-control-1']:checked .promo-slider__item--2,
-.promo-slider__input[id='promo-control-1']:checked .promo-slider__item--3 {
+
+.promo-slider__input[id='promo-control-3']:checked ~ .promo-slider__controls label[for='promo-control-3']::before {
+  display: block;
+}
+
+.promo-slider__input[id='promo-control-1']:checked ~ .promo-slider__item--2,
+.promo-slider__input[id='promo-control-1']:checked ~ .promo-slider__item--3 {
   display: none;
 }
 
-.promo-slider__input[id='promo-control-2']:checked .promo-slider__item--2 {
-  display: block;
-}
-.promo-slider__input[id='promo-control-2']:checked .promo-slider__item--1,
-.promo-slider__input[id='promo-control-2']:checked .promo-slider__item--3 {
+.promo-slider__input[id='promo-control-2']:checked ~ .promo-slider__item--1,
+.promo-slider__input[id='promo-control-2']:checked ~ .promo-slider__item--3 {
   display: none;
 }
 
-.promo-slider__input[id='promo-control-3']:checked .promo-slider__item--3 {
-  display: block;
-}
-.promo-slider__input[id='promo-control-3']:checked .promo-slider__item--1,
-.promo-slider__input[id='promo-control-3']:checked .promo-slider__item--2 {
+.promo-slider__input[id='promo-control-3']:checked ~ .promo-slider__item--1,
+.promo-slider__input[id='promo-control-3']:checked ~ .promo-slider__item--2 {
   display: none;
 }
 
@@ -875,6 +875,7 @@ ul {
 
   position: relative;
 
+  cursor: pointer;
   letter-spacing: .01em;
 
   color: #000;
@@ -913,30 +914,96 @@ ul {
   background-image: url('../img/checkbox-on.svg');
 }
 
-.filter__checkbox-input:hover .filter__checkbox-label::before {
-  opacity: .6;
-}
-
-.filter__checkbox-input:checked:disabled .filter__checkbox-label::before {
-  opacity: .25;
-}
-
-.filter__checkbox-input:checked .filter__checkbox-label::after {
-  display: block;
-}
-
-.filter__checkbox-input:checked .filter__checkbox-label::before {
+.filter__checkbox-input:checked + .filter__checkbox-label::before {
   display: none;
 }
 
-.filter__checkbox-input:checked:hover .filter__checkbox-label::after {
-  opacity: .6;
-}
-
-.filter__checkbox-input:checked:active .filter__checkbox-label::after {
-  display: none;
-}
-
-.filter__checkbox-input:checked:active .filter__checkbox-label::before {
+.filter__checkbox-input:checked + .filter__checkbox-label::after {
   display: block;
 }
+
+.filter__radio-label {
+  font-size: 14px;
+  line-height: 40px;
+
+  position: relative;
+
+  cursor: pointer;
+  letter-spacing: .01em;
+
+  color: #000;
+}
+
+.filter__radio-label::before {
+  position: absolute;
+  bottom: -3px;
+  left: -41px;
+
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+
+  content: '';
+
+  border: 4px solid #000;
+  border-radius: 12.5px;
+}
+
+.filter__radio-label::after {
+  position: absolute;
+  top: 5px;
+  left: -33px;
+
+  display: none;
+
+  width: 9px;
+  height: 9px;
+
+  content: '';
+
+  border-radius: 4.5px;
+  background-color: #000;
+}
+
+.filter__radio-input:checked + .filter__radio-label::after {
+  display: block;
+}
+
+.filter .btn {
+  width: 200px;
+}
+
+.goods__sort h3 {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+
+  letter-spacing: .2em;
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.goods__sort-item a {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  color: rgba(0, 0, 0, .3);
+}
+
+.goods__sort-item a:hover {
+  color: rgba(0, 0, 0, .6);
+}
+
+.goods__sort-item a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.goods__sort-item--active {
+  color: rgba(0, 0, 0, 1);
+}
+
+
