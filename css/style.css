@@ -39,6 +39,10 @@ body {
   background-color: #fff;
 }
 
+label {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -692,9 +696,18 @@ ul {
   color: rgba(255, 255, 255, .7);
 }
 
+.page-footer__user-logout {
+  color: rgba(255, 255, 255, .3);
+}
+
+.page-footer__user-logout:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
 .page-footer__user-link:hover {
   color: rgba(255, 255, 255, 1);
 }
+
 .page-footer__user-link:hover::before {
   opacity: .6;
 }
@@ -715,7 +728,7 @@ ul {
   width: 13px;
   height: 12px;
 
-  content: ''
+  content: '';
 
   background-repeat: no-repeat;
 }
@@ -864,7 +877,7 @@ ul {
   width: 200px;
 }
 
-.popup-write-us__close {
+.popup-close {
   font-size: 0;
 
   position: absolute;
@@ -876,12 +889,13 @@ ul {
 
   cursor: pointer;
 
+  opacity: .5;
   border: none;
   border-radius: 50%;
-  background-color: rgba(240, 197, 46, .5);
+  background-color: #f0c52e;
 }
 
-.popup-write-us__close::before {
+.popup-close::before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -895,7 +909,7 @@ ul {
   background-color: #fff;
 }
 
-.popup-write-us__close::after {
+.popup-close::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -903,20 +917,24 @@ ul {
   width: 2px;
   height: 30px;
 
-  content: ''
+  content: '';
   transform: translate(-50%, -50%) rotate(135deg);
 
   background-color: #fff;
 }
 
-.popup-write-us__close:hover {
+.popup-close:hover {
   transition: all .2s linear;
 
-  background-color: rgba(240, 197, 46, 1);
+  opacity: 1;
 }
 
-.popup-write-us__close:active {
-  background-color: rgba(240, 197, 46, .5);
+.popup-close:active {
+  opacity: .3;
+}
+
+.popup-map {
+  position: relative;
 }
 
 .page-content__title {
@@ -1112,6 +1130,10 @@ ul {
   color: rgba(0, 0, 0, 1);
 }
 
+.goods__sort-item--active a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
 .goods__sort-up-link {
   font-size: 0;
 
@@ -1150,6 +1172,11 @@ ul {
 
 .goods__sort-up--active a,
 .goods__sort-down--active a {
+  opacity: 1;
+}
+
+.goods__sort-up--active a:hover,
+.goods__sort-down--active a:hover {
   opacity: 1;
 }
 
@@ -1257,6 +1284,10 @@ ul {
   color: rgba(0, 0, 0, .3);
 }
 
+.pagination__control a:active {
+  color: rgba(0, 0, 0, .3);
+}
+
 .pagination__control a {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 16px;
@@ -1277,8 +1308,8 @@ ul {
 
   letter-spacing: .2em;
 
-  color: #000;
   opacity: .3;
+  color: #000;
 }
 
 .pagination__item a:hover {
@@ -1293,5 +1324,6 @@ ul {
   opacity: 1;
 }
 
-
-
+.pagination__item--active a:hover {
+  opacity: 1;
+}
