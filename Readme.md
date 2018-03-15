@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Дмитрий Метельков](https://up.htmlacademy.ru/htmlcss/20/user/512127).
-* Наставник: [Альбина Токарчук](https://up.htmlacademy.ru/htmlcss/20/user/167491).
+* Наставник: [Никита Рогатнев](https://up.htmlacademy.ru/htmlcss/20/user/86119).
 
 ---
 
