@@ -126,6 +126,7 @@ a {
 
   color: #000;
   background-color: #f7e296;
+  z-index: 2;
 }
 
 .page-header__logo {
@@ -222,6 +223,11 @@ a {
 }
 
 .main-nav__search-input {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+
   padding: 0;
 
   cursor: pointer;
@@ -384,9 +390,10 @@ a {
 }
 
 .main-nav__link--catalog::before {
-  bottom: 10px;
-  right: -30px;
   position: absolute;
+  right: -30px;
+  bottom: 10px;
+
   width: 16px;
   height: 2px;
 
@@ -396,9 +403,10 @@ a {
 }
 
 .main-nav__link--catalog::after {
-  bottom: 3px;
-  right: -23px;
   position: absolute;
+  right: -23px;
+  bottom: 3px;
+
   width: 2px;
   height: 16px;
 
@@ -436,21 +444,23 @@ a {
   opacity: .3;
 }
 
-.main-nav__link--catalog:active + .main-nav__sub-wrap {
-  display: block;
-}
-
 .main-nav__sub-wrap {
   position: absolute;
-  bottom: 35px;
+  z-index: 1;
+  bottom: 0;
   left: 0;
 
   display: none;
 
   width: 1160px;
+  padding-bottom: 35px;
   padding-left: 60px;
 
   background-color: #f7e296;
+}
+
+.main-nav__link--catalog:active + .main-nav__sub-wrap {
+  display: block;
 }
 
 .main-nav__sub-list {
@@ -521,20 +531,146 @@ a {
   opacity: .3;
 }
 
+.promo-slider {
+  position: relative;
+}
+
+.promo-slider__item {
+  z-index: 2;
+  position: relative;
+
+  display: flex;
+
+  margin-top: -110px;
+}
+
+.promo-slider__img-wrap {
+  width: 560px;
+  margin-right: 40px;
+
+  text-align: center;
+}
+
+.promo-slider__img-wrap--02 img {
+  margin-top: 10px; 
+  margin-left: 10px;
+}
+
+.promo-slider__img-wrap--03 img {
+  margin-top: 60px; 
+  margin-left: 20px;
+}
+
+.promo-slider__descr-wrap {
+  position: relative;
+
+  width: 560px;
+  padding-top: 80px;
+}
+
+.promo-slider__descr-wrap {
+  
+}
+
+.promo-slider__descr-wrap::before {
+  position: absolute;
+  top: 35px;
+  left: 0;
+
+  width: 100px;
+  height: 7px;
+
+  content: '';
+
+  background-color: #fff;
+}
+
+.promo-slider__descr-wrap--1::after {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 179px;
+  font-weight: 800;
+  line-height: 179px;
+
+  position: absolute;
+  top: -15px;
+  right: 45px;
+
+  content: '01';
+  z-index: -1;
+
+  color: #fff;
+}
+
+.promo-slider__descr-wrap--2::after {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 179px;
+  font-weight: 800;
+  line-height: 179px;
+
+  position: absolute;
+  top: -15px;
+  right: 45px;
+
+  content: '02';
+  z-index: -1;
+
+  color: #fff;
+}
+
+.promo-slider__descr-wrap--3::after {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 179px;
+  font-weight: 800;
+  line-height: 179px;
+
+  position: absolute;
+  top: -15px;
+  right: 45px;
+
+  content: '03';
+
+  color: #fff;
+  z-index: -1;
+}
+
 .promo-slider__item b {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 56px;
 
+  display: block;
+
+  padding-bottom: 20px;
+
   color: #000;
+}
+
+.promo-slider__descr-wrap p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
 }
 
 .promo-slider__item .btn {
   width: 220px;
+  margin-bottom: 45px;
 
   border: none;
   background: none;
+}
+
+.promo-slider__controls {
+  position: absolute;
+  top: 325px;
+  right: 80px;
+
+  display: flex;
+
+  width: 80px;
+  z-index: 2;
+
+  justify-content: space-between;
 }
 
 .promo-slider__control {
@@ -598,6 +734,10 @@ a {
   display: none;
 }
 
+.promo-slider__advantages {
+  margin: 0;
+  padding: 0;
+}
 
 .promo-slider__advantages td {
   font-family: 'Gilroy', 'Arial', sans-serif;
@@ -605,12 +745,32 @@ a {
   font-weight: 300;
   line-height: 48px;
 
+  margin: 0;
+  padding: 0;
+
   color: #000;
 }
 
 .promo-slider__advantages th {
   font-size: 13px;
   line-height: 20px;
+
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+}
+
+.promo-slider__advantages-col--first {
+  width: 160px;
+}
+
+.promo-slider__advantages-col--second {
+  width: 140px;
+}
+
+.promo-slider__advantages-col--third {
+  width: 160px;
 }
 
 .main-goods__item-wrap {
@@ -1034,7 +1194,9 @@ a {
 }
 
 .popup-write-us input {
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
 
   width: 360px;
@@ -1059,11 +1221,6 @@ a {
 }
 
 .popup-write-us input::placeholder {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-
   color: rgba(70, 70, 70, .4);
 }
 
