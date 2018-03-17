@@ -909,10 +909,30 @@ a {
   color: #000;
 }
 
+.services-slider {
+  position: relative;
+}
+
+.services-slider::before {
+  position: absolute;
+  z-index: -1;
+  top: 163px;
+  left: 0;
+
+  width: 100%;
+  height: 288px;
+
+  content: '';
+
+  background-color: #e5e5e5;
+}
+
 .services-slider-wrap {
+  z-index: 1;
+
   display: flex;
 
-  padding-bottom: 80px;
+  padding-bottom: 118px;
 }
 
 .services-slider__item {
@@ -927,12 +947,14 @@ a {
 
 .services-slider__item--delivery::before {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 148px;
   right: -234px;
-  content: '';
+
   width: 136px;
   height: 164px;
+
+  content: '';
 
   background-image: url('../img/delivery.svg');
   background-repeat: no-repeat;
@@ -944,12 +966,14 @@ a {
 
 .services-slider__item--warranty::before {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 124px;
   right: -253px;
-  content: '';
+
   width: 171px;
   height: 195px;
+
+  content: '';
 
   background-image: url('../img/warranty.svg');
   background-repeat: no-repeat;
@@ -957,12 +981,14 @@ a {
 
 .services-slider__item--credit::before {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 124px;
   right: -258px;
-  content: '';
+
   width: 156px;
   height: 188px;
+
+  content: '';
 
   background-image: url('../img/credit.svg');
   background-repeat: no-repeat;
@@ -1173,6 +1199,29 @@ a {
   line-height: 48px;
 
   color: #000;
+}
+
+.main-brands {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.main-brands__list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main-brands__item {
+  width: 260px;
+  height: 260px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-brands__img {
