@@ -909,6 +909,94 @@ a {
   color: #000;
 }
 
+.services-slider-wrap {
+  display: flex;
+
+  padding-bottom: 80px;
+}
+
+.services-slider__item {
+  position: relative;
+
+  width: 460px;
+  margin-left: 122px;
+  padding-top: 136px;
+
+  order: 2;
+}
+
+.services-slider__item--delivery::before {
+  position: absolute;
+  z-index: -1;
+  top: 148px;
+  right: -234px;
+  content: '';
+  width: 136px;
+  height: 164px;
+
+  background-image: url('../img/delivery.svg');
+  background-repeat: no-repeat;
+}
+
+.services-slider__item--warranty {
+  margin-left: 121px;
+}
+
+.services-slider__item--warranty::before {
+  position: absolute;
+  z-index: -1;
+  top: 124px;
+  right: -253px;
+  content: '';
+  width: 171px;
+  height: 195px;
+
+  background-image: url('../img/warranty.svg');
+  background-repeat: no-repeat;
+}
+
+.services-slider__item--credit::before {
+  position: absolute;
+  z-index: -1;
+  top: 124px;
+  right: -258px;
+  content: '';
+  width: 156px;
+  height: 188px;
+
+  background-image: url('../img/credit.svg');
+  background-repeat: no-repeat;
+}
+
+.services-slider__item--credit {
+  width: 430px;
+}
+
+.services-slider__item h3 {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.services-slider__controls {
+  position: relative;
+
+  padding-top: 142px;
+  padding-right: 120px;
+}
+
+.services-slider__controls::before {
+  position: absolute;
+  top: 63px;
+  right: -5px;
+
+  width: 7px;
+  height: 319px;
+
+  content: '';
+
+  background-color: #000;
+}
+
 .services-slider__control {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
@@ -921,8 +1009,10 @@ a {
   display: block;
 
   width: 160px;
+  margin-bottom: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 6px;
 
   cursor: pointer;
   text-align: center;
@@ -930,6 +1020,8 @@ a {
   text-transform: uppercase;
 
   color: #000;
+
+  order: 1;
 }
 
 .services-slider__control::before {
@@ -970,14 +1062,8 @@ a {
   transition: all .3s linear;
 }
 
-.services-slider__input[id='services-control-1']:checked ~ .services-slider__controls label[for='services-control-1'] {
-  color: #f7e184;
-}
-
-.services-slider__input[id='services-control-2']:checked ~ .services-slider__controls label[for='services-control-2'] {
-  color: #f7e184;
-}
-
+.services-slider__input[id='services-control-1']:checked ~ .services-slider__controls label[for='services-control-1'],
+.services-slider__input[id='services-control-2']:checked ~ .services-slider__controls label[for='services-control-2'],
 .services-slider__input[id='services-control-3']:checked ~ .services-slider__controls label[for='services-control-3'] {
   color: #f7e184;
 }
@@ -1063,54 +1149,21 @@ a {
   background-color: #000;
 }
 
-.services-slider__input[id='services-control-2']:checked ~ .services-slider__controls label[for='services-control-2']::before {
-  display: block;
-}
-
-.services-slider__input[id='services-control-3']:checked ~ .services-slider__controls label[for='services-control-3']::before {
-  display: block;
-}
-
-.services-slider__input[id='services-control-1']:checked ~ .services-slider__controls label[for='services-control-1']::before {
-  display: block;
-}
-
-.services-slider__input[id='services-control-2']:checked ~ .services-slider__controls label[for='services-control-2']::before {
-  display: block;
-}
-
+.services-slider__input[id='services-control-2']:checked ~ .services-slider__controls label[for='services-control-2']::before,
+.services-slider__input[id='services-control-3']:checked ~ .services-slider__controls label[for='services-control-3']::before,
+.services-slider__input[id='services-control-1']:checked ~ .services-slider__controls label[for='services-control-1']::before,
+.services-slider__input[id='services-control-2']:checked ~ .services-slider__controls label[for='services-control-2']::before,
 .services-slider__input[id='services-control-3']:checked ~ .services-slider__controls label[for='services-control-3']::before {
   display: block;
 }
 
 .services-slider__input[id='services-control-1']:checked ~ .services-slider__item--warranty,
-.services-slider__input[id='services-control-1']:checked ~ .services-slider__item--credit {
-  display: none;
-}
-
+.services-slider__input[id='services-control-1']:checked ~ .services-slider__item--credit,
 .services-slider__input[id='services-control-2']:checked ~ .services-slider__item--delivery,
-.services-slider__input[id='services-control-2']:checked ~ .services-slider__item--credit {
-  display: none;
-}
-
+.services-slider__input[id='services-control-2']:checked ~ .services-slider__item--credit,
 .services-slider__input[id='services-control-3']:checked ~ .services-slider__item--delivery,
 .services-slider__input[id='services-control-3']:checked ~ .services-slider__item--warranty {
   display: none;
-}
-
-.services-slider__item--delivery {
-  background-image: url('../img/delivery.svg');
-  background-repeat: no-repeat;
-}
-
-.services-slider__item--warranty {
-  background-image: url('../img/warranty.svg');
-  background-repeat: no-repeat;
-}
-
-.services-slider__item--credit {
-  background-image: url('../img/credit.svg');
-  background-repeat: no-repeat;
 }
 
 .services-slider__item h3 {
