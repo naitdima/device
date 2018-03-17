@@ -184,8 +184,8 @@ a {
 }
 
 .main-nav__user-item--compare {
-  margin-right: 23px;
   width: 100px;
+  margin-right: 23px;
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -347,18 +347,21 @@ a {
 .main-nav__user-link--login::before {
   bottom: 4px;
   left: 1px;
+
   background-image: url('../img/black-user.svg');
 }
 
 .main-nav__user-link--compare::before {
   bottom: 2px;
   left: 7px;
+
   background-image: url('../img/black-compare.svg');
 }
 
 .main-nav__user-link--cart::before {
   bottom: 4px;
   left: 5px;
+
   background-image: url('../img/black-cart.svg');
 }
 
@@ -397,11 +400,11 @@ a {
 
 .main-nav__item--contacts {
   margin-right: 0;
+  margin-right: -.2em;
 
   text-align: right;
 
   flex-grow: 1;
-  margin-right: -0.2em;
 }
 
 .main-nav__link {
@@ -543,6 +546,8 @@ a {
 
 .promo-slider {
   position: relative;
+
+  padding-bottom: 96px;
 }
 
 .promo-slider__item {
@@ -816,9 +821,70 @@ a {
   flex-grow: 1;
 }
 
+.main-goods__list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main-goods__item {
+  margin-right: 40px;
+}
+
+.main-goods__item:last-child {
+  margin-right: 0;
+}
 
 .main-goods__item-wrap {
+  width: 160px;
+  height: 160px;
+
   background-color: rgba(240, 197, 46, .5);
+}
+
+.main-goods__item-wrap--vr {
+  padding-top: 52px;
+  padding-right: 32px;
+  padding-bottom: 53px;
+  padding-left: 31px;
+}
+
+.main-goods__item-wrap--selfie {
+  padding-top: 41px;
+  padding-right: 36px;
+  padding-bottom: 2px;
+  padding-left: 38px;
+}
+
+.main-goods__item-wrap--cam {
+  padding-top: 38px;
+  padding-right: 40px;
+  padding-bottom: 35px;
+  padding-left: 49px;
+}
+
+.main-goods__item-wrap--fit {
+  padding-top: 50px;
+  padding-right: 25px;
+  padding-bottom: 45px;
+  padding-left: 28px;
+}
+
+.main-goods__item-wrap--watch {
+  padding-top: 32px;
+  padding-right: 49px;
+  padding-bottom: 30px;
+  padding-left: 55px;
+}
+
+.main-goods__item-wrap--copter {
+  padding-top: 49px;
+  padding-right: 15px;
+  padding-bottom: 42px;
+  padding-left: 13px;
 }
 
 .main-goods__item-link:hover .main-goods__item-wrap {
@@ -832,11 +898,13 @@ a {
   opacity: .3;
 }
 
-.main-goods__item p {
+.main-goods__item-name {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
+
+  padding-top: 16px;
 
   color: #000;
 }
