@@ -351,6 +351,13 @@ a {
   background-image: url('../img/black-user.svg');
 }
 
+.main-nav__user-link--profile::before {
+  bottom: 4px;
+  left: 1px;
+
+  background-image: url('../img/black-user.svg');
+}
+
 .main-nav__user-link--compare::before {
   bottom: 2px;
   left: 7px;
@@ -1222,6 +1229,8 @@ a {
   padding: 0;
 
   list-style-type: none;
+
+  justify-content: space-between;
 }
 
 .main-brands__item {
@@ -1230,7 +1239,6 @@ a {
 
   width: 260px;
   height: 260px;
-  margin-right: 40px;
 
   justify-content: center;
 }
@@ -1254,13 +1262,14 @@ a {
 
   padding-top: 46px;
   padding-bottom: 79px;
+
+  justify-content: space-between;
 }
 
 .main-info {
   position: relative;
 
   width: 560px;
-  margin-right: 40px;
 }
 
 .main-info::before {
@@ -1355,13 +1364,12 @@ a {
   position: relative;
 
   width: 560px;
-  margin-left: -2px;
 }
 
 .main-contacts::before {
   position: absolute;
   top: -52px;
-  left: 3px;
+  left: 1px;
 
   width: 80px;
   height: 7px;
@@ -1369,6 +1377,10 @@ a {
   content: '';
 
   background-color: #000;
+}
+
+.main-contacts h3 {
+  margin-left: -3px;
 }
 
 .main-contacts p {
@@ -1379,17 +1391,57 @@ a {
 .main-contacts__map {
   display: block;
 
-  margin-left: 3px;
+  margin-left: 1px;
   padding-bottom: 59px;
 }
 
 .main-contacts .btn {
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .page-footer {
+  padding-top: 63px;
+  padding-bottom: 57px;
   color: #fff;
   background-color: #464646;
+}
+
+.page-footer__user-panel {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.page-footer__logo {
+  padding-top: 2px;
+}
+
+.page-footer__user-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.page-footer__user-item {
+  text-align: right;
+}
+
+.page-footer__user-item--login {
+  flex-grow: 11;
+}
+
+.page-footer__user-item--compare {
+  flex-grow: 1;
+}
+
+.page-footer__user-item--cart {
+  flex-grow: 1;
 }
 
 .page-footer__logo a {
@@ -1409,14 +1461,16 @@ a {
 .page-footer__user-link {
   position: relative;
 
+  text-align: right;
+
   color: rgba(255, 255, 255, .7);
 }
 
-.page-footer__user-logout {
+.page-footer__user-link--logout {
   color: rgba(255, 255, 255, .3);
 }
 
-.page-footer__user-logout:hover {
+.page-footer__user-link--logout:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -1450,10 +1504,19 @@ a {
 }
 
 .page-footer__user-link--login::before {
+  left: -26px;
+
+  background-image: url('../img/yellow-user.svg');
+}
+
+.page-footer__user-link--profile::before {
   background-image: url('../img/yellow-user.svg');
 }
 
 .page-footer__user-link--compare::before {
+  bottom: 2px;
+  left: -20px;
+
   background-image: url('../img/yellow-compare.svg');
 }
 
@@ -1461,12 +1524,37 @@ a {
   background-image: url('../img/yellow-cart.svg');
 }
 
-.page-footer__services a {
+.page-footer__info {
+  display: flex;
+
+  padding-top: 20px;
+  padding-bottom: 62px;
+
+  justify-content: space-between;
+}
+
+.page-footer__address {
+  flex-grow: 7;
+}
+
+.page-footer__services {
+  display: flex;
+
+  padding-top: 6px;
+
+  flex-grow: 5;
+  justify-content: space-between;
+}
+
+.page-footer__services-link {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
 
+  margin: 0 auto;
+
+  text-align: center;
   letter-spacing: .2em;
   text-transform: uppercase;
 
@@ -1481,9 +1569,57 @@ a {
   color: rgba(255, 255, 255, .3);
 }
 
+.page-footer__phone {
+  text-align: right;
+
+  flex-grow: 9;
+}
+
 .page-footer__phone a {
   color: #fff;
 }
+
+.page-footer__links {
+  position: relative;
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+.page-footer__links::before {
+  position: absolute;
+  bottom: 22px;
+  left: 1px;
+
+  width: 80px;
+  height: 7px;
+
+  content: '';
+
+  background-color: #ffc600;
+}
+
+.page-footer__links-wrap {
+  display: flex;
+
+  width: 690px;
+
+  justify-content: space-between;
+}
+
+.page-footer__social-list {
+  display: flex;
+
+  width: 180px;
+  margin: 0;
+
+  list-style-type: none;
+
+  justify-content: space-between;
+}
+
+
 
 .page-footer__social-item a {
   opacity: .3;
