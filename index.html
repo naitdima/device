@@ -321,23 +321,33 @@
       </div>
     </footer>
 
-    <section class="popup-write-us  popup-write-us--active">
+    <section class="popup-write-us">
       <h2 class="visually-hidden">Форма для обратной связи</h2>
-      <form method="post" action="https://echo.htmlacademy.ru">
-        <label for="user-name">Ваше имя:</label>
-        <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
-        <label for="user-email">Ваш e-mail:</label>
-        <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
-        <label for="user-message">Текст письма:</label>
-        <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-      </form>
+      <div class="popup-write-us__wrap">
+        <form class="popup-form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="popup-input-wrap  popup-input-wrap--name">
+            <label for="user-name">Ваше имя:</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+          </div>
+          <div class="popup-input-wrap  popup-input-wrap--email">
+            <label for="user-email">Ваш e-mail:</label>
+            <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+          </div>
+          <div class="popup-input-wrap  popup-input-wrap--message">
+            <label for="user-message">Текст письма:</label>
+            <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
+          </div>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
       <button class="popup-close" type="button">Закрыть</button>
+      </div>
     </section>
 
-    <section class="popup-map  popup-map--active">
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A629b2e37f3c0e18dc5fe434ead5cd83ffa327cabe3900fddd0eaddcb70201760&amp;source=constructor" width="960" height="559"></iframe>
-      <button class="popup-close" type="button">Закрыть</button>
+    <section class="popup-map">
+      <div class="popup-map__wrap">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A629b2e37f3c0e18dc5fe434ead5cd83ffa327cabe3900fddd0eaddcb70201760&amp;source=constructor" width="960" height="559"></iframe>
+        <button class="popup-close" type="button">Закрыть</button>
+      </div>
     </section>
   </body>
 </html>
