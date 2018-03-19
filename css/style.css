@@ -162,7 +162,6 @@ a {
 
 .catalog .main-nav {
   padding-bottom: 47px;
-
 }
 
 .main-nav__user-list {
@@ -285,6 +284,8 @@ a {
 
 .main-nav__search-btn {
   position: absolute;
+  top: -9px;
+  left: 330px;
 
   display: none;
 
@@ -293,8 +294,7 @@ a {
   margin-bottom: auto;
   padding-top: 14px;
   padding-bottom: 14px;
-  left: 330px;
-  top: -9px;
+
   cursor: pointer;
 
   border: 2px solid #000;
@@ -376,6 +376,7 @@ a {
 
 .main-nav__user-link--logout {
   padding-left: 15px;
+
   color: rgba(0, 0, 0, .3);
 }
 
@@ -494,6 +495,7 @@ a {
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
+
   z-index: 2;
 
   display: flex;
@@ -1877,6 +1879,7 @@ a {
 
 .page-content__header {
   padding-top: 37px;
+  padding-bottom: 44px;
   padding-left: 59px;
 }
 
@@ -1885,36 +1888,43 @@ a {
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
+
+  margin: 0;
   padding-bottom: 20px;
 
   letter-spacing: .01em;
 
   color: #000;
-  margin: 0;
 }
 
 .breadcrumbs__list {
   display: flex;
-  list-style-type: none;
+
   margin: 0;
   padding: 0;
+
+  list-style-type: none;
 }
 
 .breadcrumbs__item {
-  padding-right: 37px;
   position: relative;
+
+  padding-right: 37px;
 }
 
 .breadcrumbs__item::after {
-  content: '';
   position: absolute;
-  width: 5px;
-  height: 5px;
-  border-right: 1px solid #000;
-  border-top: 1px solid #000;
-  transform: rotate(45deg);
   top: 14px;
   right: 19px;
+
+  width: 5px;
+  height: 5px;
+
+  content: '';
+  transform: rotate(45deg);
+
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
 }
 
 .breadcrumbs__item:nth-child(2)::after {
@@ -1944,11 +1954,21 @@ a {
 
 .page-content__wrap {
   display: flex;
-  margin: 0 auto;
+
+  width: 100%;
+
+  justify-content: center;
 }
 
 .sidebar {
-  width: 
+  width: 350px;
+  padding-left: 80px;
+
+  background-color: #efefef;
+}
+
+.goods {
+  width: 852px;
 }
 
 .sidebar h2 {
@@ -1957,14 +1977,46 @@ a {
   font-weight: 800;
   line-height: 24px;
 
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
   letter-spacing: .2em;
   text-transform: uppercase;
 
   color: #000;
 }
 
+.filter {
+  padding-top: 69px;
+}
+
 .filter__item {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  position: relative;
   border: none;
+}
+
+.filter__item::before {
+  position: absolute;
+  content: '';
+  width: 201px;
+  height: 2px;
+  background-color: #000;
+  top: 0;
+  left: 0;
+}
+
+.filter__item:last-child::after {
+  position: absolute;
+  content: '';
+  width: 201px;
+  height: 2px;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
 }
 
 .filter__item legend {
@@ -1972,11 +2024,29 @@ a {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 18px;
 
   letter-spacing: .01em;
-  text-transform: uppercase;
 
   color: #000;
+}
+
+/* Пока нет input-range */
+.filter__item:first-child legend {
+  padding-bottom: 104px;
+}
+
+.filter__checkbox-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-bottom: 31px;
+}
+
+.filter__checkbox-item {
+  padding-left: 39px;
 }
 
 .filter__checkbox-label {
@@ -1998,8 +2068,8 @@ a {
 
 .filter__checkbox-label::before {
   position: absolute;
-  bottom: -3px;
-  left: -41px;
+  bottom: -2px;
+  left: -40px;
 
   width: 23px;
   height: 23px;
@@ -2011,8 +2081,8 @@ a {
 
 .filter__checkbox-label::after {
   position: absolute;
-  bottom: -3px;
-  left: -41px;
+  bottom: -2px;
+  left: -40px;
 
   display: none;
 
@@ -2032,6 +2102,17 @@ a {
   display: block;
 }
 
+.filter__radio-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-bottom: 30px;
+}
+
+.filter__radio-item {
+  padding-left: 39px;
+}
+
 .filter__radio-label {
   font-size: 14px;
   line-height: 40px;
@@ -2046,8 +2127,8 @@ a {
 
 .filter__radio-label::before {
   position: absolute;
-  bottom: -3px;
-  left: -41px;
+  bottom: -2px;
+  left: -40px;
 
   box-sizing: border-box;
   width: 25px;
@@ -2061,8 +2142,8 @@ a {
 
 .filter__radio-label::after {
   position: absolute;
-  top: 5px;
-  left: -33px;
+  top: 4px;
+  left: -32px;
 
   display: none;
 
@@ -2084,6 +2165,10 @@ a {
 
   border: none;
   background: none;
+}
+
+.goods__sort {
+  background-color: rgba(0, 0, 0, .08);
 }
 
 .goods__sort h3 {
