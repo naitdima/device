@@ -1992,31 +1992,39 @@ a {
 }
 
 .filter__item {
+  position: relative;
+
   width: 200px;
   margin: 0;
   padding: 0;
-  position: relative;
+
   border: none;
 }
 
 .filter__item::before {
   position: absolute;
-  content: '';
-  width: 201px;
-  height: 2px;
-  background-color: #000;
   top: 0;
   left: 0;
+
+  width: 201px;
+  height: 2px;
+
+  content: '';
+
+  background-color: #000;
 }
 
 .filter__item:last-child::after {
   position: absolute;
-  content: '';
-  width: 201px;
-  height: 2px;
-  background-color: #000;
   bottom: 0;
   left: 0;
+
+  width: 201px;
+  height: 2px;
+
+  content: '';
+
+  background-color: #000;
 }
 
 .filter__item legend {
@@ -2024,6 +2032,7 @@ a {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
+
   margin: 0;
   padding-top: 12px;
   padding-bottom: 18px;
@@ -2041,8 +2050,9 @@ a {
 .filter__checkbox-list {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   padding-bottom: 31px;
+
+  list-style-type: none;
 }
 
 .filter__checkbox-item {
@@ -2105,8 +2115,9 @@ a {
 .filter__radio-list {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   padding-bottom: 30px;
+
+  list-style-type: none;
 }
 
 .filter__radio-item {
@@ -2168,7 +2179,15 @@ a {
 }
 
 .goods__sort {
+  display: flex;
+
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 72px;
+
   background-color: rgba(0, 0, 0, .08);
+
+  align-items: center;
 }
 
 .goods__sort h3 {
@@ -2177,10 +2196,28 @@ a {
   font-weight: 800;
   line-height: 24px;
 
+  margin: 0;
+  margin-right: 55px;
+
   letter-spacing: .2em;
   text-transform: uppercase;
 
   color: #000;
+}
+
+.goods__sort-list {
+  display: flex;
+
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4px;
+
+  list-style-type: none;
+}
+
+.goods__sort-item {
+  margin-right: 28px;
 }
 
 .goods__sort-item a {
@@ -2206,6 +2243,18 @@ a {
 
 .goods__sort-item--active a:hover {
   color: rgba(0, 0, 0, 1);
+}
+
+.goods__sort-updown {
+  display: flex;
+
+  width: 80px;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  align-items: center;
 }
 
 .goods__sort-up-link {
@@ -2254,14 +2303,50 @@ a {
   opacity: 1;
 }
 
-.goods-item__info a {
+.goods__list {
+  display: flex;
+
+  width: 852px;
+  margin: 0;
+  padding-top: 69px;
+  padding-left: 71px;
+
+  flex-wrap: wrap;
+}
+
+.goods-item {
+  width: 360px;
+  margin-right: 40px;;
+}
+
+.goods-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.goods-item__info {
+  display: flex;
+
+  padding-top: 24px;
+  padding-bottom: 45px;
+
+  justify-content: space-between;
+}
+
+.goods-item__info h1 {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
 
+  width: 260px;
+  margin: 0;
+
   letter-spacing: .01em;
 
+  color: #000;
+}
+
+.goods-item__info a {
   color: #000;
 }
 
@@ -2272,8 +2357,32 @@ a {
   letter-spacing: .01em;
 }
 
+.goods-item__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+
+  width: 360px;
+  height: 380px;
+  padding-top: 169px;
+  padding-right: 90px;
+  padding-left: 90px;
+
+  text-align: center;
+
+  background-color: rgba(238, 238, 238, .7);
+}
+
+.goods-item:hover .goods-item__hover {
+  display: block;
+}
+
 .goods-item__hover .btn {
   width: 200px;
+  margin-bottom: 6px;
+  margin-left: -11px;
 
   border: none;
   background: none;
@@ -2331,29 +2440,68 @@ a {
   display: block;
 }
 
-.goods-item__hover {
-  display: none;
-
-  background-color: rgba(238, 238, 238, .7);
-}
-
 .goods-item__img {
-  cursor: pointer;
-}
-
-.goods-item__img:hover ~ .goods-item__hover {
-  display: block;
+  position: relative;
 }
 
 .pagination {
+  display: flex;
+
+  width: 760px;
+  margin: 0;
+  margin-top: -11px;
+  margin-left: 71px;
+  padding: 0;
+  margin-bottom: 77px;
+
+  list-style-type: none;
+
+  background-color: rgba(0, 0, 0, .08);
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination__control--prev {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.pagination__control--next {
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+
+  text-align: center;
+  text-align: right;
+}
+
+.pagination__list {
+  display: flex;
+  flex-grow: 1;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  
+  justify-content: center;
+}
+
+.pagination__item {
+  text-align: center;
+  width: 40px;
+}
+
+.pagination__control:hover {
   background-color: rgba(0, 0, 0, .08);
 }
 
-.pagination__control a:hover {
-  background-color: rgba(0, 0, 0, .08);
-}
-
-.pagination__control a:hover {
+.pagination__control:hover {
   background-color: rgba(0, 0, 0, .08);
 }
 
