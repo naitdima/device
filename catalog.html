@@ -93,7 +93,7 @@
               <legend>Цвет</legend>
               <ul class="filter__checkbox-list">
                   <li class="filter__checkbox-item">
-                    <input class="filter__checkbox-input  visually-hidden" id="filter-check-1" type="checkbox" name="black">
+                    <input class="filter__checkbox-input  visually-hidden" id="filter-check-1" type="checkbox" name="black" checked>
                     <label class="filter__checkbox-label" for="filter-check-1">Черный</label>
                   </li>
                   <li class="filter__checkbox-item">
@@ -101,11 +101,11 @@
                     <label class="filter__checkbox-label" for="filter-check-2">Белый</label>
                   </li>
                   <li class="filter__checkbox-item">
-                    <input class="filter__checkbox-input  visually-hidden" id="filter-check-3" type="checkbox" name="blue">
+                    <input class="filter__checkbox-input  visually-hidden" id="filter-check-3" type="checkbox" name="blue" checked>
                     <label class="filter__checkbox-label" for="filter-check-3">Синий</label>
                   </li>
                   <li class="filter__checkbox-item">
-                    <input class="filter__checkbox-input  visually-hidden" id="filter-check-4" type="checkbox" name="red">
+                    <input class="filter__checkbox-input  visually-hidden" id="filter-check-4" type="checkbox" name="red" checked>
                     <label class="filter__checkbox-label" for="filter-check-4">Красный</label>
                   </li>
                   <li class="filter__checkbox-item">
@@ -203,22 +203,24 @@
 
           
           <ul class="pagination">
-            <li class="pagination__control  pagination__control--prev">
-              <a href="#">Назад</a>
+            <li>
+              <a class="pagination__control  pagination__control--prev" href="#">Назад</a>
             </li>
-            <li class="pagination__list">
-              <li class="pagination__item  pagination__item--active">
-                <a href="#">1</a>
-              </li>
-              <li class="pagination__item">
-                <a href="#">2</a>
-              </li>
-              <li class="pagination__item">
-                <a href="#">3</a>
-              </li>
+            <li class="pagination__list-wrap">
+              <ul class="pagination__list">
+                <li class="pagination__item  pagination__item--active">
+                  <a href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#">3</a>
+                </li>
+              </ul>
             </li>
-            <li class="pagination__control  pagination__control--next">
-              <a href="#">Вперед</a>
+            <li>
+              <a class="pagination__control  pagination__control--next" href="#">Вперед</a>
             </li>
           </ul>
         </section>
