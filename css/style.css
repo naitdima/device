@@ -1877,21 +1877,23 @@ a {
 }
 
 .sidebar {
-  width: 350px;
-  padding-left: 80px;
-
+  flex-grow: 1.7;
+  padding-right: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   background-color: #efefef;
 }
 
 .goods {
-  width: 852px;
+  flex-grow: 1;
 }
 
 .sidebar h2 {
   margin: 0;
   padding-top: 23px;
   padding-bottom: 23px;
-
+  width: 200px;
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
@@ -1902,6 +1904,7 @@ a {
 }
 
 .filter {
+  width: 200px;
   padding-top: 69px;
 }
 
