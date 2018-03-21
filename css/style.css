@@ -2119,6 +2119,11 @@ a {
   opacity: 0.6;
 }
 
+.filter__radio-label:active::before,
+.filter__radio-label:active::before {
+  opacity: 1;
+}
+
 .filter .btn {
   width: 200px;
   margin-left: 2px;
@@ -2242,7 +2247,6 @@ a {
   justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 45px;
-  padding-right: 4px;
 }
 
 .goods-item__info h1 {
