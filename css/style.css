@@ -87,6 +87,10 @@ a {
   cursor: pointer;
 }
 
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .btn::before {
   content: "";
   position: absolute;
@@ -1866,6 +1870,14 @@ a {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.breadcrumbs__item:last-child a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs__item:last-child a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .breadcrumbs__item a:active {
   color: rgba(0, 0, 0, 0.1);
 }
@@ -1877,11 +1889,14 @@ a {
 }
 
 .sidebar {
-  flex-grow: 1.7;
-  padding-right: 68px;
+  position: relative;
+
   display: flex;
+  flex-grow: 1.66;
   flex-direction: column;
   align-items: flex-end;
+  padding-right: 68px;
+
   background-color: #efefef;
 }
 
@@ -1890,10 +1905,11 @@ a {
 }
 
 .sidebar h2 {
+  width: 200px;
   margin: 0;
   padding-top: 23px;
   padding-bottom: 23px;
-  width: 200px;
+
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
@@ -1903,15 +1919,28 @@ a {
   letter-spacing: 0.2em;
 }
 
+.sidebar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+
+  width: 100%;
+  height: 70px;
+
+  background-color: rgba(0,0,0,0.08);
+}
+
 .filter {
-  width: 200px;
+  width: 202px;
   padding-top: 69px;
 }
 
 .filter__item {
   position: relative;
 
-  width: 200px;
+  width: 202px;
   margin: 0;
   padding: 0;
 
@@ -1922,19 +1951,7 @@ a {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-
-  width: 201px;
-  height: 2px;
-
-  background-color: #000000;
-}
-
-.filter__item:last-child::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  left: 1px;
 
   width: 201px;
   height: 2px;
@@ -1989,7 +2006,8 @@ a {
 }
 
 .filter__checkbox-input:disabled + .filter__checkbox-label::before,
-.filter__checkbox-input:checked:disabled + .filter__checkbox-label::before {
+.filter__checkbox-input:checked:disabled + .filter__checkbox-label::before,
+.filter__checkbox-input:checked:disabled + .filter__checkbox-label::after {
   opacity: 0.25;
 }
 
@@ -2103,6 +2121,7 @@ a {
 
 .filter .btn {
   width: 200px;
+  margin-left: 2px;
 
   background: none;
   border: none;
@@ -2111,8 +2130,8 @@ a {
 .goods__sort {
   display: flex;
   align-items: center;
-  padding-top: 17px;
-  padding-bottom: 19px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   padding-left: 72px;
 
   background-color: rgba(0, 0, 0, 0.08);
@@ -2133,7 +2152,7 @@ a {
 
 .goods__sort-list {
   display: flex;
-  width: 518px;
+  width: 519px;
   margin: 0;
   padding: 0;
   padding-right: 18px;
@@ -2206,7 +2225,7 @@ a {
   width: 852px;
   margin: 0;
   padding-top: 69px;
-  padding-left: 71px;
+  padding-left: 72px;
 }
 
 .goods-item {
@@ -2223,6 +2242,7 @@ a {
   justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 45px;
+  padding-right: 4px;
 }
 
 .goods-item__info h1 {
@@ -2245,6 +2265,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.01em;
+  text-align: left;
 }
 
 .goods-item__hover {
