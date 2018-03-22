@@ -3,8 +3,8 @@
   font-family: "Gilroy";
   font-style: normal;
 
-  src: url("fonts/gilroyextrabold.woff2") format("woff2"),
-  url("fonts/gilroyextrabold.woff") format("woff");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-family: "Gilroy";
   font-style: normal;
 
-  src: url("fonts/gilroylight.woff2") format("woff2"),
-  url("fonts/gilroylight.woff") format("woff");
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+  url("../fonts/gilroylight.woff") format("woff");
 }
 
 .visually-hidden {
@@ -44,7 +44,7 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 40px;
-
+  min-width: 1200px;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
