@@ -2014,6 +2014,12 @@ a {
   box-shadow: 0 2px 1px #dadada;
 }
 
+.filter-range__toggle:active {
+  width: 22px;
+  height: 22px;
+  border: 9px solid #ffffff;
+}
+
 .filter-range__toggle--min {
   top: -10px;
   left: -4px;
