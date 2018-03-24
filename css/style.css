@@ -275,6 +275,23 @@ a {
 }
 
 .main-nav__search-input:focus ~ .main-nav__search-btn {
+  z-index: 0;
+
+  opacity: 1;
+}
+
+.main-nav__search-btn:focus {
+  z-index: 0;
+
+  color: #ffffff;
+
+  background-color: #000000;
+  opacity: 1;
+
+  transition: all 0.1s linear;
+}
+
+.main-nav__search-btn:focus ~ .main-nav__search-label::before {
   display: block;
 }
 
@@ -286,8 +303,8 @@ a {
   position: absolute;
   top: -9px;
   left: 330px;
+  z-index: -1;
 
-  display: none;
   width: 85px;
   margin-top: auto;
   margin-bottom: auto;
@@ -298,6 +315,7 @@ a {
   background-color: transparent;
   border: 2px solid #000000;
   cursor: pointer;
+  opacity: 0;
 }
 
 .main-nav__search-btn:hover {
@@ -714,6 +732,11 @@ a {
   border-radius: 3px;
 }
 
+.promo-slider__input:focus ~ .promo-slider__controls label {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .promo-slider__input[id="promo-control-1"]:checked ~ .promo-slider__controls label[for="promo-control-1"]::before,
 .promo-slider__input[id="promo-control-2"]:checked ~ .promo-slider__controls label[for="promo-control-2"]::before,
 .promo-slider__input[id="promo-control-3"]:checked ~ .promo-slider__controls label[for="promo-control-3"]::before {
@@ -1086,6 +1109,11 @@ a {
   margin: 0;
 
   transition: all 0.3s linear;
+}
+
+.services-slider__input:focus ~ .services-slider__controls label {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .services-slider__input[id="services-control-1"]:checked ~ .services-slider__controls label[for="services-control-1"],
