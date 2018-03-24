@@ -19,7 +19,9 @@
             <li class="main-nav__user-item  main-nav__user-item--search">
               <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru">
                 <input class="main-nav__search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
-                <label class="main-nav__search-label" for="search">Поиск:</label>
+                <label class="main-nav__search-label" for="search">
+                  <span class="visually-hidden">Поиск:</span>
+                </label>
                 <button class="main-nav__search-btn" type="submit">Найти</button>
               </form>
             </li>
@@ -120,9 +122,15 @@
           </div>
 
           <div class="promo-slider__controls">
-            <label class="promo-slider__control" for="promo-control-1">Первый слайд</label>
-            <label class="promo-slider__control" for="promo-control-2">Второй слайд</label>
-            <label class="promo-slider__control" for="promo-control-3">Третий слайд</label>
+            <label class="promo-slider__control" for="promo-control-1">
+              <span class="visually-hidden">Первый слайд</span>
+            </label>
+            <label class="promo-slider__control" for="promo-control-2">
+              <span class="visually-hidden">Второй слайд</span>
+            </label>
+            <label class="promo-slider__control" for="promo-control-3">
+              <span class="visually-hidden">Третий слайд</span>
+            </label>
           </div>
         </section>
 
@@ -261,7 +269,6 @@
             </p>
             <a class="main-contacts__map" href="map.html">
               <img src="img/main-contacts-map.jpg" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
-              <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A629b2e37f3c0e18dc5fe434ead5cd83ffa327cabe3900fddd0eaddcb70201760&amp;source=constructor" width="560" height="222"></iframe> -->
             </a>
             <a class="btn" href="#">Напишите нам</a>
           </section>
@@ -339,14 +346,18 @@
           </div>
           <button class="btn" type="submit">Отправить</button>
         </form>
-      <button class="popup-close" type="button">Закрыть</button>
+      <button class="popup-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
       </div>
     </section>
 
     <section class="popup-map">
       <div class="popup-map__wrap">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A629b2e37f3c0e18dc5fe434ead5cd83ffa327cabe3900fddd0eaddcb70201760&amp;source=constructor" width="960" height="559"></iframe>
-        <button class="popup-close" type="button">Закрыть</button>
+        <button class="popup-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
       </div>
     </section>
   </body>
