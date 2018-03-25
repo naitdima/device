@@ -262,6 +262,7 @@ a {
 
   background-color: transparent;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -1829,6 +1830,7 @@ a {
 
   background-color: rgba(230, 230, 230, 0.5);
   border: none;
+  outline: none;
 }
 
 .popup-write-us input:hover {
@@ -1871,6 +1873,7 @@ a {
 
   background-color: rgba(230, 230, 230, 0.5);
   border: none;
+  outline: none;
 
   resize: none;
 }
