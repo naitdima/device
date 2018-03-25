@@ -264,23 +264,50 @@ a {
   cursor: pointer;
 }
 
-.main-nav__search-input::-webkit-input-placeholder,
-.main-nav__search-input:-ms-input-placeholder,
-.main-nav__search-input::-ms-input-placeholder,
+.main-nav__search-input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__search-input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__search-input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .main-nav__search-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-nav__search-input:hover::-webkit-input-placeholder,
-.main-nav__search-input:hover:-ms-input-placeholder,
-.main-nav__search-input:hover::-ms-input-placeholder,
+.main-nav__search-input:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-nav__search-input:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-nav__search-input:hover::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .main-nav__search-input:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.main-nav__search-input:focus::-webkit-input-placeholder,
-.main-nav__search-input:focus:-ms-input-placeholder,
-.main-nav__search-input:focus::-ms-input-placeholder,
+.main-nav__search-input:focus::-webkit-input-placeholder {
+  font-size: 0;
+}
+
+.main-nav__search-input:focus:-ms-input-placeholder {
+  font-size: 0;
+}
+
+.main-nav__search-input:focus::-ms-input-placeholder {
+  font-size: 0;
+}
+
 .main-nav__search-input:focus::placeholder {
   font-size: 0;
 }
@@ -745,8 +772,8 @@ a {
 }
 
 .promo-slider__input:focus ~ .promo-slider__controls label {
+  outline: 1px dotted #212121; 
   outline: 5px auto -webkit-focus-ring-color;
-  outline: thin dotted;
 }
 
 .promo-slider__input[id="promo-control-1"]:checked ~ .promo-slider__controls label[for="promo-control-1"]::before,
@@ -1125,8 +1152,8 @@ a {
 }
 
 .services-slider__input:focus ~ .services-slider__controls label {
+  outline: 1px dotted #212121; 
   outline: 5px auto -webkit-focus-ring-color;
-  outline: thin dotted;
 }
 
 .services-slider__input[id="services-control-1"]:checked ~ .services-slider__controls label[for="services-control-1"],
@@ -1685,6 +1712,8 @@ a {
   list-style-type: none;
 }
 
+
+
 .page-footer__social-item a {
   opacity: 0.3;
 }
@@ -1816,9 +1845,18 @@ a {
   background-color: rgba(237, 181, 181, 1.0);
 }
 
-.popup-write-us input::-webkit-input-placeholder,
-.popup-write-us input:-ms-input-placeholder,
-.popup-write-us input::-ms-input-placeholder,
+.popup-write-us input::-webkit-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.popup-write-us input:-ms-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.popup-write-us input::-ms-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
 .popup-write-us input::placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
@@ -1851,9 +1889,30 @@ a {
   border: 3px solid rgba(240, 197, 46, 0.5);
 }
 
-.popup-write-us textarea::-webkit-input-placeholder,
-.popup-write-us textarea:-ms-input-placeholder,
-.popup-write-us textarea::-ms-input-placeholder,
+.popup-write-us textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.popup-write-us textarea:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.popup-write-us textarea::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(70, 70, 70, 0.4);
+}
+
 .popup-write-us textarea::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -2251,13 +2310,13 @@ a {
 }
 
 .filter__checkbox-input:focus + .filter__checkbox-label {
+  outline: 1px dotted #212121; 
   outline: 5px auto -webkit-focus-ring-color;
-  outline: thin dotted;
 }
 
 .filter__radio-input:focus + .filter__radio-label {
+  outline: 1px dotted #212121; 
   outline: 5px auto -webkit-focus-ring-color;
-  outline: thin dotted;
 }
 
 .filter__checkbox-label::before {
