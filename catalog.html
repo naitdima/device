@@ -87,64 +87,70 @@
         <section class="sidebar">
           <h2>Фильтр:</h2>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="filter__item">
-              <legend>Стоимость</legend>
-              <div class="filter-range">
-                <div class="filter-range__controls">
-                  <div class="filter-range__scale">
-                    <div class="filter-range__bar"></div>
+            <div class="filter__item-wrap">
+              <fieldset class="filter__item  filter__item--price">
+                <legend>Стоимость</legend>
+                <div class="filter-range">
+                  <div class="filter-range__controls">
+                    <div class="filter-range__scale">
+                      <div class="filter-range__bar"></div>
+                    </div>
+                    <div class="filter-range__toggle  filter-range__toggle--min"></div>
+                    <div class="filter-range__toggle  filter-range__toggle--max"></div>
                   </div>
-                  <div class="filter-range__toggle  filter-range__toggle--min"></div>
-                  <div class="filter-range__toggle  filter-range__toggle--max"></div>
+                  <div class="filter-range__price">
+                    <label class="filter-range__label  filter-range__label--min">от 
+                      <input class="filter-range__input" type="text" name="min-price" value="0">
+                    </label>
+                    <label class="filter-range__label  filter-range__label--max">до 
+                      <input class="filter-range__input" type="text" name="max-price" value="5000">
+                    </label>
+                  </div>
                 </div>
-                <div class="filter-range__price">
-                  <label class="filter-range__label  filter-range__label--min">от 
-                    <input class="filter-range__input" type="text" name="min-price" value="0">
-                  </label>
-                  <label class="filter-range__label  filter-range__label--max">до 
-                    <input class="filter-range__input" type="text" name="max-price" value="5000">
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="filter__item">
-              <legend>Цвет</legend>
-              <ul class="filter__checkbox-list">
-                  <li class="filter__checkbox-item">
-                    <input class="filter__checkbox-input  visually-hidden" id="filter-check-1" type="checkbox" name="black" checked>
-                    <label class="filter__checkbox-label" for="filter-check-1">Черный</label>
-                  </li>
-                  <li class="filter__checkbox-item">
-                    <input class="filter__checkbox-input  visually-hidden" id="filter-check-2" type="checkbox" name="white">
-                    <label class="filter__checkbox-label" for="filter-check-2">Белый</label>
-                  </li>
-                  <li class="filter__checkbox-item">
-                    <input class="filter__checkbox-input  visually-hidden" id="filter-check-3" type="checkbox" name="blue" checked>
-                    <label class="filter__checkbox-label" for="filter-check-3">Синий</label>
-                  </li>
-                  <li class="filter__checkbox-item">
-                    <input class="filter__checkbox-input  visually-hidden" id="filter-check-4" type="checkbox" name="red" checked>
-                    <label class="filter__checkbox-label" for="filter-check-4">Красный</label>
-                  </li>
-                  <li class="filter__checkbox-item">
-                    <input class="filter__checkbox-input  visually-hidden" id="filter-check-5" type="checkbox" name="pink">
-                    <label class="filter__checkbox-label" for="filter-check-5">Розовый</label>
-                  </li>
-                </ul>
-            </fieldset>
-            <fieldset class="filter__item">
-              <legend>Bluetooth</legend>
-              <ul class="filter__radio-list">
-                  <li class="filter__radio-item">
-                    <input class="filter__radio-input  visually-hidden" id="filter-control-1" type="radio" name="bluetooth" value="yes" checked>
-                    <label class="filter__radio-label" for="filter-control-1">Есть</label>
-                  </li>
-                  <li class="filter__radio-item">
-                    <input class="filter__radio-input  visually-hidden" id="filter-control-2" type="radio" name="bluetooth" value="no">
-                    <label class="filter__radio-label" for="filter-control-2">Нет</label>
-                  </li>
-                </ul>
-            </fieldset>
+              </fieldset>
+            </div>
+            <div class="filter__item-wrap">
+              <fieldset class="filter__item">
+                <legend>Цвет</legend>
+                <ul class="filter__checkbox-list">
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-1" type="checkbox" name="black" checked>
+                      <label class="filter__checkbox-label" for="filter-check-1">Черный</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-2" type="checkbox" name="white">
+                      <label class="filter__checkbox-label" for="filter-check-2">Белый</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-3" type="checkbox" name="blue" checked>
+                      <label class="filter__checkbox-label" for="filter-check-3">Синий</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-4" type="checkbox" name="red" checked>
+                      <label class="filter__checkbox-label" for="filter-check-4">Красный</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-5" type="checkbox" name="pink">
+                      <label class="filter__checkbox-label" for="filter-check-5">Розовый</label>
+                    </li>
+                  </ul>
+              </fieldset>
+            </div>
+            <div class="filter__item-wrap">
+              <fieldset class="filter__item">
+                <legend>Bluetooth</legend>
+                <ul class="filter__radio-list">
+                    <li class="filter__radio-item">
+                      <input class="filter__radio-input  visually-hidden" id="filter-control-1" type="radio" name="bluetooth" value="yes" checked>
+                      <label class="filter__radio-label" for="filter-control-1">Есть</label>
+                    </li>
+                    <li class="filter__radio-item">
+                      <input class="filter__radio-input  visually-hidden" id="filter-control-2" type="radio" name="bluetooth" value="no">
+                      <label class="filter__radio-label" for="filter-control-2">Нет</label>
+                    </li>
+                  </ul>
+              </fieldset>
+            </div>
             <button class="btn" type="submit">Показать</button>
           </form>
         </section>

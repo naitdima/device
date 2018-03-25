@@ -250,6 +250,7 @@ a {
   position: relative;
 
   width: 320px;
+  height: 30px;
   margin-left: 10px;
   padding: 0;
 
@@ -772,7 +773,7 @@ a {
 }
 
 .promo-slider__input:focus ~ .promo-slider__controls label {
-  outline: 1px dotted #212121; 
+  outline: 1px dotted #212121;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
@@ -1152,7 +1153,7 @@ a {
 }
 
 .services-slider__input:focus ~ .services-slider__controls label {
-  outline: 1px dotted #212121; 
+  outline: 1px dotted #212121;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
@@ -1712,8 +1713,6 @@ a {
   list-style-type: none;
 }
 
-
-
 .page-footer__social-item a {
   opacity: 0.3;
 }
@@ -2145,17 +2144,11 @@ a {
   padding-top: 69px;
 }
 
-.filter__item {
+.filter__item-wrap {
   position: relative;
-
-  width: 202px;
-  margin: 0;
-  padding: 0;
-
-  border: none;
 }
 
-.filter__item::before {
+.filter__item-wrap::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2165,6 +2158,14 @@ a {
   height: 2px;
 
   background-color: #000000;
+}
+
+.filter__item {
+  width: 202px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
 }
 
 .filter__item legend {
@@ -2180,7 +2181,7 @@ a {
   letter-spacing: 0.01em;
 }
 
-.filter__item:first-child legend {
+.filter__item--price legend {
   padding-bottom: 35px;
 }
 
@@ -2310,12 +2311,12 @@ a {
 }
 
 .filter__checkbox-input:focus + .filter__checkbox-label {
-  outline: 1px dotted #212121; 
+  outline: 1px dotted #212121;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter__radio-input:focus + .filter__radio-label {
-  outline: 1px dotted #212121; 
+  outline: 1px dotted #212121;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
