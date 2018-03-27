@@ -16,17 +16,72 @@
   url("../fonts/gilroylight.woff") format("woff");
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px) translate(-50%, -50%);
+            transform: translateY(-2000px) translate(-50%, -50%);
+  }
+  70% {
+    -webkit-transform: translateY(30px) translate(-50%, -50%);
+            transform: translateY(30px) translate(-50%, -50%);
+  }
+  90% {
+    -webkit-transform: translateY(-10px) translate(-50%, -50%);
+            transform: translateY(-10px) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translateY(0) translate(-50%, -50%);
+            transform: translateY(0) translate(-50%, -50%);
+  }
+}
+
 @keyframes bounce {
-  0%   { transform: translateY(-2000px) translate(-50%, -50%); }
-  70%  { transform: translateY(30px) translate(-50%, -50%); }
-  90%  { transform: translateY(-10px) translate(-50%, -50%); }
-  100% { transform: translateY(0) translate(-50%, -50%); }
+  0% {
+    -webkit-transform: translateY(-2000px) translate(-50%, -50%);
+            transform: translateY(-2000px) translate(-50%, -50%);
+  }
+  70% {
+    -webkit-transform: translateY(30px) translate(-50%, -50%);
+            transform: translateY(30px) translate(-50%, -50%);
+  }
+  90% {
+    -webkit-transform: translateY(-10px) translate(-50%, -50%);
+            transform: translateY(-10px) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translateY(0) translate(-50%, -50%);
+            transform: translateY(0) translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%) translateX(0);
+            transform: translate(-50%, -50%) translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate(-50%, -50%) translateX(-10px);
+            transform: translate(-50%, -50%) translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate(-50%, -50%) translateX(10px);
+            transform: translate(-50%, -50%) translateX(10px);
+  }
 }
 
 @keyframes shake {
-  0%, 100%                { transform: translate(-50%, -50%) translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translate(-50%, -50%) translateX(-10px); }
-  20%, 40%, 60%, 80%      { transform: translate(-50%, -50%) translateX(10px); }
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%) translateX(0);
+            transform: translate(-50%, -50%) translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate(-50%, -50%) translateX(-10px);
+            transform: translate(-50%, -50%) translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate(-50%, -50%) translateX(10px);
+            transform: translate(-50%, -50%) translateX(10px);
+  }
 }
 
 .visually-hidden {
@@ -1776,8 +1831,11 @@ a {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  animation-name: bounce;
-  animation-duration: 0.6s;
+
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .popup-write-us--active {
@@ -1785,8 +1843,10 @@ a {
 }
 
 .popup-write-us--error {
-  animation-name: shake;
-  animation-duration: 0.6s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .popup-write-us__wrap {
@@ -2022,8 +2082,11 @@ a {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  animation-name: bounce;
-  animation-duration: 0.6s;
+
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .popup-map--active {
