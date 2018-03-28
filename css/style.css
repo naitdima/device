@@ -116,6 +116,7 @@
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -540,6 +541,7 @@ a {
 }
 
 .main-nav__item--catalog {
+  position: relative;
   width: 540px;
 }
 
@@ -615,8 +617,8 @@ a {
 
 .main-nav__sub-wrap {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 22px;
+  left: -60px;
   z-index: 2;
 
   display: none;
@@ -628,10 +630,6 @@ a {
   background-color: #f7e296;
 }
 
-.catalog .main-nav__sub-wrap {
-  bottom: -113px;
-}
-
 .main-nav__sub-wrap:hover {
   display: block;
 }
@@ -640,7 +638,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 600px;
+  width: 640px;
   margin: 0;
   padding: 0;
 
@@ -652,41 +650,26 @@ a {
   letter-spacing: 0.01em;
 }
 
-.main-nav__sub-item--vr {
-  width: 240px;
-}
-
-.main-nav__sub-item--fit {
+.main-nav__sub-column {
+  display: flex;
+  flex-direction: column;
   width: 200px;
+  padding-right: 20px;
 }
 
-.main-nav__sub-item--copter {
-  flex-grow: 1;
-  width: 160px;
-}
-
-.main-nav__sub-item--selfie {
+.main-nav__sub-column:first-child {
   width: 240px;
 }
 
-.main-nav__sub-item--watch {
-  flex-grow: 1;
-  width: 200px;
-}
-
-.main-nav__sub-item--cam {
-  width: 240px;
-}
-
-.main-nav__sub-item a {
+.main-nav__sub-column a {
   color: #000000;
 }
 
-.main-nav__sub-item a:hover {
+.main-nav__sub-column a:hover {
   opacity: 0.6;
 }
 
-.main-nav__sub-item a:active {
+.main-nav__sub-column a:active {
   opacity: 0.3;
 }
 
