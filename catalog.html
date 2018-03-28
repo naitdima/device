@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс &mdash; Каталог товаров</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="catalog">
     <div class="container">
@@ -85,7 +85,9 @@
       </div>
       <div class="page-content__wrap">
         <section class="sidebar">
-          <h2>Фильтр:</h2>
+          <div class="sidebar__title-wrap">
+            <h2>Фильтр:</h2>
+          </div>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <div class="filter__item-wrap">
               <fieldset class="filter__item  filter__item--price">
@@ -199,7 +201,7 @@
                 <a class="goods-item__add" href="#">Добавить к сравнению</a>
               </div>
               <div class="goods-item__info">
-                <h1><a href="#">Профессиональная<br>селфи-палка</a></h1>
+                <h1><a href="#">Профессиональная селфи-палка</a></h1>
                 <span class="goods-item__price">1500 руб.</span>
               </div>
             </article>
@@ -291,13 +293,19 @@
           <div class="page-footer__links-wrap">
             <ul class="page-footer__social-list">
               <li class="page-footer__social-item">
-                <a href="#"><img src="img/facebook.svg" alt="Facebook" width="32" height="32"></a>
+                <a class="page-footer__social-link  page-footer__social-link--fb" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
               </li>
               <li class="page-footer__social-item">
-                <a href="#"><img src="img/instagram.svg" alt="Instagram" width="32" height="32"></a>
+                <a class="page-footer__social-link  page-footer__social-link--inst" href="#">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
               </li>
               <li class="page-footer__social-item">
-                <a href="#"><img src="img/twitter.svg" alt="Twitter" width="32" height="32"></a>
+                <a class="page-footer__social-link  page-footer__social-link--tw" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
               </li>
             </ul>
             <div class="page-footer__copyright">
