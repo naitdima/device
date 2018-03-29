@@ -542,6 +542,7 @@ a {
 
 .main-nav__item--catalog {
   position: relative;
+
   width: 540px;
 }
 
@@ -662,6 +663,8 @@ a {
 }
 
 .main-nav__sub-column a {
+  display: block;
+
   color: #000000;
 }
 
@@ -813,8 +816,8 @@ a {
 
 .promo-slider__controls {
   position: absolute;
-  bottom: 253px;
   right: 82px;
+  bottom: 253px;
   z-index: 1;
 
   display: flex;
